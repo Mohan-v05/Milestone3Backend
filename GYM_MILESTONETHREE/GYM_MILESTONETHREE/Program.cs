@@ -23,19 +23,19 @@ namespace GYM_MILESTONETHREE
 
 
             builder.Services.AddDbContext<AppDb>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DbConnection")));
-            builder.Services.AddScoped<IProgramService, ProgramService>();
+            //builder.Services.AddScoped<IProgramService, ProgramService>();
 
             const string policyName = "CorsPolicy";
             builder.Services.AddCors(options =>
             {
                 options.AddPolicy(name: policyName, builder =>
                 {
-                    builder.AllowAnyOrigin()
-                        .AllowAnyHeader()
-                        .AllowAnyMethod();
+                    builder.WithOrigins("*")   // Allow all origins
+                        .AllowAnyHeader()      // Allow all headers
+                        .AllowAnyMethod();     // Allow all methods
                 });
             });
-            
+
 
             builder.Services.AddControllers().AddJsonOptions(options =>
             {
@@ -54,7 +54,7 @@ namespace GYM_MILESTONETHREE
             }
             app.UseCors("CorsPolicy");
             app.UseStaticFiles();
-            app.UseHttpsRedirection();
+           // app.UseHttpsRedirection();
 
             app.UseAuthorization();
 

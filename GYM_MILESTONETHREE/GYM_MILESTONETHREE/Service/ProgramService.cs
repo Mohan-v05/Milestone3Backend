@@ -1,17 +1,16 @@
 ﻿using GYM_MILESTONETHREE.DataBase;
+using GYM_MILESTONETHREE.IRepository;
 using GYM_MILESTONETHREE.IService;
 
 namespace GYM_MILESTONETHREE.Service
 {
     public class ProgramService : IProgramService
     {
-        private readonly AppDb _context;
+        private readonly IGymProgramRepository _repository;
 
-        public ProgramService(AppDb context)
+        public ProgramService(IGymProgramRepository repository)
         {
-            _context = context;
+            _repository = repository;
         }
-
-
     }
 }

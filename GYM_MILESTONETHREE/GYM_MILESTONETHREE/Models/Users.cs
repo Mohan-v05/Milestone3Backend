@@ -19,8 +19,8 @@ namespace GYM_MILESTONETHREE.Models
 
         public string Password { get; set; }
 
-        public Enrollments? Enrollment { get; set; }
+        public ICollection<Enrollments>? Enrollment { get; set; }
 
-        public Guid? EnrollmentId {  get; set; }
+    
     }
 }

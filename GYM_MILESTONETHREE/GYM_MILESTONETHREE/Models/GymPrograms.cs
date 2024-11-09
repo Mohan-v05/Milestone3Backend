@@ -15,8 +15,6 @@ namespace GYM_MILESTONETHREE.Models
 
         public string? Category { get; set; }
 
-        public string? ImagePath { get; set; }
-
         [Required]
         public decimal Fees { get; set; }
 

@@ -1,15 +1,15 @@
 ﻿using GYM_MILESTONETHREE.DataBase;
+using GYM_MILESTONETHREE.IRepository;
 
 namespace GYM_MILESTONETHREE.Service
 {
     public class EnrollementService
     {
-        private readonly AppDb _context;
+       private readonly IEnrollmentRepository _enrollmentRepository;
 
-        public EnrollementService(AppDb context)
+        public EnrollementService(IEnrollmentRepository enrollmentRepository)
         {
-            _context = context;
+            _enrollmentRepository = enrollmentRepository;
         }
-
     }
 }

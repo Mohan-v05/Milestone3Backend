@@ -28,14 +28,14 @@ namespace GYM_MILESTONETHREE.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<GymPrograms>>> Getprograms()
         {
-            return await _context.programs.ToListAsync();
+            return await _context.gymprograms.ToListAsync();
         }
 
         // GET: api/GymPrograms/5
         [HttpGet("get by id{id}")]
         public async Task<ActionResult<GymPrograms>> GetGymPrograms(int id)
         {
-            var gymPrograms = await _context.programs.FindAsync(id);
+            var gymPrograms = await _context.gymprograms.FindAsync(id);
 
             if (gymPrograms == null)
             {
@@ -79,10 +79,33 @@ namespace GYM_MILESTONETHREE.Controllers
         // POST: api/GymPrograms
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<GymPrograms>> PostGymPrograms(GymPrograms gymPrograms)
+        public async Task<ActionResult<GymPrograms>> PostGymPrograms(createProgramReq programReq)
         {  
-            _context.programs.Add(gymPrograms);
-            await _context.SaveChangesAsync();
+            var gymPrograms=new GymPrograms();
+            gymPrograms.Name = programReq.Name;
+            gymPrograms.Description = programReq.Description;
+            gymPrograms.Category= programReq.Category;
+            gymPrograms.Fees  = programReq.Fees;
+            if (file == null || file.Length == 0)
+            {
+                return BadRequest("Image is not Proper");
+            }
+            using var ms = new MemoryStream();
+            await file.CopyToAsync(ms);
+
+            var image = new ImageModel
+            {
+                Name = file.FileName,
+                Data = ms.ToArray(),
+                ContentType = file.ContentType,
+
+            };
+            _context.Images.Add(image);
+
+            _context.gymprograms.Add(gymPrograms);
+
+            
+          
 
             return CreatedAtAction("GetGymPrograms", new { id = gymPrograms.Id }, gymPrograms);
         }
@@ -93,7 +116,7 @@ namespace GYM_MILESTONETHREE.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<GymPrograms>> GetGymProgramById(int id)
         {
-            var gymProgram = await _context.programs.FindAsync(id);
+            var gymProgram = await _context.gymprograms.FindAsync(id);
 
             if (gymProgram == null)
             {
@@ -119,13 +142,13 @@ namespace GYM_MILESTONETHREE.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteGymPrograms(int id)
         {
-            var gymPrograms = await _context.programs.FindAsync(id);
+            var gymPrograms = await _context.gymprograms.FindAsync(id);
             if (gymPrograms == null)
             {
                 return NotFound();
             }
 
-            _context.programs.Remove(gymPrograms);
+            _context.gymprograms.Remove(gymPrograms);
             await _context.SaveChangesAsync();
 
             return NoContent();
@@ -133,7 +156,7 @@ namespace GYM_MILESTONETHREE.Controllers
 
         private bool GymProgramsExists(int id)
         {
-            return _context.programs.Any(e => e.Id == id);
+            return _context.gymprograms.Any(e => e.Id == id);
         }
     }
 }

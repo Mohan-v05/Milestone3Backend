@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "B3d4fzC7+dSCKbZ8n+rveu+77cHeQGJ/rGQ+ijjkGks=",
+  "Source": "GYM_MILESTONETHREE",
+  "BasePath": "_content/GYM_MILESTONETHREE",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "GYM_MILESTONETHREE\\wwwroot",
+      "Source": "GYM_MILESTONETHREE",
+      "ContentRoot": "C:\\Users\\UT01146\\Desktop\\GYM MILESTONE 3\\Back End\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\",
+      "BasePath": "_content/GYM_MILESTONETHREE",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

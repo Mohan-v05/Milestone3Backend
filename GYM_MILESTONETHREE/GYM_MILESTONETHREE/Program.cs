@@ -5,6 +5,8 @@ using System;
 using GYM_MILESTONETHREE.DataBase;
 using GYM_MILESTONETHREE.IService;
 using GYM_MILESTONETHREE.Service;
+using GYM_MILESTONETHREE.IRepository;
+using GYM_MILESTONETHREE.Repository;
 
 namespace GYM_MILESTONETHREE
 {
@@ -23,7 +25,11 @@ namespace GYM_MILESTONETHREE
 
 
             builder.Services.AddDbContext<AppDb>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DbConnection")));
-            //builder.Services.AddScoped<IProgramService, ProgramService>();
+            builder.Services.AddScoped<IProgramService, ProgramService>();
+            builder.Services.AddScoped<IGymProgramRepository, GymProgramsRepository>();
+
+            builder.Services.AddScoped<IUserService, UserService>();
+            builder.Services.AddScoped<IUserRepository, UserRepository>();
 
             const string policyName = "CorsPolicy";
             builder.Services.AddCors(options =>

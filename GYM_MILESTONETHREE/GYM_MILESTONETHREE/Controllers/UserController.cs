@@ -1,4 +1,7 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using GYM_MILESTONETHREE.IService;
+using GYM_MILESTONETHREE.RequestModels;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GYM_MILESTONETHREE.Controllers
@@ -7,5 +10,40 @@ namespace GYM_MILESTONETHREE.Controllers
     [ApiController]
     public class UserController : ControllerBase
     {
+        private readonly IUserService _userService;
+
+        public UserController(IUserService userService)
+        {
+            _userService = userService;
+        }
+        [HttpPost("login")]
+        public async Task<IActionResult> login(loginModel Logincredential)
+        {
+            try
+            {
+                var data = await _userService.login(Logincredential);
+                return Ok(data);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+
+        [HttpPost("addNewUser")]
+        public async Task<IActionResult> AddUser(AddUserReq req)
+        {
+            try
+            {
+               var data= await _userService.AddUser(req);
+                return Ok(data);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
     }
 }

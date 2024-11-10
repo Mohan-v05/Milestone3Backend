@@ -1,11 +1,11 @@
 ﻿using GYM_MILESTONETHREE.Models;
 using System.ComponentModel.DataAnnotations;
 
-namespace GYM_MILESTONETHREE
+namespace GYM_MILESTONETHREE.RequestModels
 {
     public class createProgramReq
     {
-        
+
 
         [Required]
         public string Name { get; set; }
@@ -16,7 +16,7 @@ namespace GYM_MILESTONETHREE
 
         [Required]
         public decimal Fees { get; set; }
-      
+
 
     }
 }

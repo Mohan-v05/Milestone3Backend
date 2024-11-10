@@ -37,7 +37,6 @@ namespace GYM_APPLICATION_BACK_END.Controllers
                 Name = file.FileName,
                 Data = ms.ToArray(),
                 ContentType = file.ContentType,
-
             };
             _context.Images.Add(image);
             await _context.SaveChangesAsync();

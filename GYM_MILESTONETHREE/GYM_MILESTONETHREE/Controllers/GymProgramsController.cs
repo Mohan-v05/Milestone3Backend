@@ -10,6 +10,7 @@ using GYM_MILESTONETHREE.Models;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System.Runtime.CompilerServices;
 using Microsoft.VisualStudio.Web.CodeGeneration.Design;
+using GYM_MILESTONETHREE.RequestModels;
 
 namespace GYM_MILESTONETHREE.Controllers
 {
@@ -18,7 +19,7 @@ namespace GYM_MILESTONETHREE.Controllers
     public class GymProgramsController : ControllerBase
     {
         private readonly AppDb _context;
-        private readonly string _imageDirectory = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images");
+      
         public GymProgramsController(AppDb context)
         {
             _context = context;
@@ -82,26 +83,12 @@ namespace GYM_MILESTONETHREE.Controllers
         public async Task<ActionResult<GymPrograms>> PostGymPrograms(createProgramReq programReq)
         {  
             var gymPrograms=new GymPrograms();
+            
             gymPrograms.Name = programReq.Name;
             gymPrograms.Description = programReq.Description;
             gymPrograms.Category= programReq.Category;
             gymPrograms.Fees  = programReq.Fees;
-            if (file == null || file.Length == 0)
-            {
-                return BadRequest("Image is not Proper");
-            }
-            using var ms = new MemoryStream();
-            await file.CopyToAsync(ms);
-
-            var image = new ImageModel
-            {
-                Name = file.FileName,
-                Data = ms.ToArray(),
-                ContentType = file.ContentType,
-
-            };
-            _context.Images.Add(image);
-
+          
             _context.gymprograms.Add(gymPrograms);
 
             

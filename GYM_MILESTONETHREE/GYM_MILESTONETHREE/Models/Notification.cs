@@ -14,6 +14,7 @@ namespace GYM_MILESTONETHREE.Models
 
         public int userId {  get; set; }
 
-        
+        public Boolean status {  get; set; }
+        public Boolean isRead {  get; set; }
     }
 }

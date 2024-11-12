@@ -1,11 +1,19 @@
 {
   "Version": 1,
-  "Hash": "k9sPt5aGYppgISiWMV1Z+Hs+M+bTprzQNxIRuK7jEsk=",
+  "Hash": "R9LHwsOFLE23uTZuN6thydtWqcV+3YoHIlX93lcnG1M=",
   "Source": "GYM_MILESTONETHREE",
   "BasePath": "_content/GYM_MILESTONETHREE",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "GYM_MILESTONETHREE\\wwwroot",
+      "Source": "GYM_MILESTONETHREE",
+      "ContentRoot": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\11-11\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\",
+      "BasePath": "_content/GYM_MILESTONETHREE",
+      "Pattern": "**"
+    }
+  ],
   "Assets": []
 }

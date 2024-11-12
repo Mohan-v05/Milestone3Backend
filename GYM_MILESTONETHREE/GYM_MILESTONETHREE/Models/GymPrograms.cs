@@ -18,6 +18,7 @@ namespace GYM_MILESTONETHREE.Models
         [Required]
         public decimal Fees { get; set; }
 
+        public string? ImagePath { get; set; }
         public ICollection<Enrollments>? enrollments { get; set; }
     }
 }

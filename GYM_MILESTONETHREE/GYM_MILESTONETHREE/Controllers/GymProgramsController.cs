@@ -19,10 +19,50 @@ namespace GYM_MILESTONETHREE.Controllers
     public class GymProgramsController : ControllerBase
     {
         private readonly AppDb _context;
-      
+        private readonly string _imageFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images");
         public GymProgramsController(AppDb context)
         {
+            if (!Directory.Exists(_imageFolder))
+            {
+                Directory.CreateDirectory(_imageFolder);
+            }
             _context = context;
+        }
+
+        // API method to create a gym program with an image upload
+        [HttpPost("create with image")]
+        public async Task<IActionResult> CreateProgramWithImage([FromForm] createProgramReq request, [FromForm] IFormFile image)
+        {
+            if (image == null || image.Length == 0)
+            {
+                return BadRequest("No image uploaded.");
+            }
+
+            // Save the image to the wwwroot/images folder
+            var fileName = Path.GetFileName(image.FileName);
+            var filePath = Path.Combine(_imageFolder, fileName);
+
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await image.CopyToAsync(stream);
+            }
+
+            // Now create the GymProgram and save the image path
+            var gymProgram = new GymPrograms
+            {
+                Name = request.Name,
+                Description = request.Description,
+                Category = request.Category,
+                Fees = request.Fees,
+                ImagePath = $"/images/{fileName}" // Store the relative path
+            };
+
+           
+            _context.gymprograms.Add(gymProgram);
+            await _context.SaveChangesAsync();
+
+            // Return the created program with the image path
+            return Ok(gymProgram);
         }
 
         // GET: api/GymPrograms

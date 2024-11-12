@@ -16,14 +16,19 @@ namespace GYM_APPLICATION_BACK_END.Controllers
     [ApiController]
     public class Image : ControllerBase
     {
+        private readonly string _uploadFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images");
         private readonly AppDb _context;
 
         public Image(AppDb context)
-        {
+        { // Ensure the images folder exists
+            if (!Directory.Exists(_uploadFolder))
+            {
+                Directory.CreateDirectory(_uploadFolder);
+            }
             _context = context;
         }
         [HttpPost("add-image")]
-        public async Task<IActionResult> UploadImage(IFormFile file)
+        public async Task<IActionResult> uploadImage(IFormFile file)
         {
             if (file == null || file.Length == 0)
             {
@@ -101,5 +106,28 @@ namespace GYM_APPLICATION_BACK_END.Controllers
         //    }
 
         //}
+        ///upload to www root
+        [HttpPost("upload")]
+        public async Task<IActionResult> UploadImage(IFormFile file)
+        {
+            if (file == null || file.Length == 0)
+            {
+                return BadRequest("No file uploaded.");
+            }
+
+            // Generate a unique filename to avoid overwriting
+            var fileName = Path.GetFileName(file.FileName);
+            var filePath = Path.Combine(_uploadFolder, fileName);
+
+            // Save the file to the images folder
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await file.CopyToAsync(stream);
+            }
+
+            // Return the URL of the uploaded image
+            return Ok(new { FilePath = $"/images/{fileName}" });
+        }
     }
 }
+

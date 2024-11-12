@@ -48,6 +48,7 @@ namespace GYM_MILESTONETHREE
                 options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
             });
 
+     
 
             var app = builder.Build();
           
@@ -60,7 +61,7 @@ namespace GYM_MILESTONETHREE
             }
             app.UseCors("CorsPolicy");
             app.UseStaticFiles();
-           // app.UseHttpsRedirection();
+            app.UseHttpsRedirection();
 
             app.UseAuthorization();
 

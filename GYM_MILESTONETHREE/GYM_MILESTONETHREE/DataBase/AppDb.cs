@@ -16,6 +16,7 @@ namespace GYM_MILESTONETHREE.DataBase
         //public DbSet<Payments> payments { get; set; }
 
        // public DbSet<Notification> notification { get; set; }
+       public DbSet<PaymentNotification> PaymentNotifications { get; set; }
 
         public DbSet<Enrollments>enrollments { get; set; }
 
@@ -38,6 +39,18 @@ namespace GYM_MILESTONETHREE.DataBase
                 .WithMany(g => g.enrollments)
                 .HasForeignKey(e => e.GymProgramId)
                 .OnDelete(DeleteBehavior.Cascade);  // Optional: Define delete behavior
+
+            modelBuilder.Entity<PaymentNotification>()
+              .HasOne(pn => pn.User) // Relationship between PaymentNotification and User
+              .WithMany() // No need for a navigation property in the User class for PaymentNotifications
+              .HasForeignKey(pn => pn.UserId)
+              .OnDelete(DeleteBehavior.Cascade); // Cascade delete when the related User is deleted
+
+            modelBuilder.Entity<PaymentNotification>()
+                .HasOne(pn => pn.Payment) // Relationship between PaymentNotification and Payment
+                .WithMany() // No need for a navigation property in the Payment class for PaymentNotifications
+                .HasForeignKey(pn => pn.PaymentId)
+                .OnDelete(DeleteBehavior.Cascade); // 
 
             base.OnModelCreating(modelBuilder);
 

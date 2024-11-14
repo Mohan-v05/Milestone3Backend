@@ -11,6 +11,7 @@ namespace GYM_MILESTONETHREE.RequestModels
 
         public string email { get; set; }
 
+        public String gender {  get; set; }
         public Role Role { get; set; }
 
         public string Nicnumber { get; set; }

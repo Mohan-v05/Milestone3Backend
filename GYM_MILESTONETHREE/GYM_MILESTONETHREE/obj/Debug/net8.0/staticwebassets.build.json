@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rNmdaSwBzI8s1pv3Ov6yqJI0DBa3fqEVB3jpAcfsb98=",
+  "Hash": "xli/el3J+CSyQJfuMFEgnMV2H1H0Lv5YYTTVLKDIMSM=",
   "Source": "GYM_MILESTONETHREE",
   "BasePath": "_content/GYM_MILESTONETHREE",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "GYM_MILESTONETHREE\\wwwroot",
       "Source": "GYM_MILESTONETHREE",
-      "ContentRoot": "C:\\Users\\UT01146\\Desktop\\11-12\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\12-11\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\",
       "BasePath": "_content/GYM_MILESTONETHREE",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\UT01146\\Desktop\\11-12\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\LoginImage.jpg",
+      "Identity": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\12-11\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\LoginImage.jpg",
       "SourceId": "GYM_MILESTONETHREE",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\UT01146\\Desktop\\11-12\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\12-11\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\",
       "BasePath": "_content/GYM_MILESTONETHREE",
       "RelativePath": "images/LoginImage.jpg",
       "AssetKind": "All",
@@ -36,10 +36,29 @@
       "OriginalItemSpec": "wwwroot\\images\\LoginImage.jpg"
     },
     {
-      "Identity": "C:\\Users\\UT01146\\Desktop\\11-12\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\yoga.jpg",
+      "Identity": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\12-11\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\UnicoM.png",
       "SourceId": "GYM_MILESTONETHREE",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\UT01146\\Desktop\\11-12\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\12-11\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\",
+      "BasePath": "_content/GYM_MILESTONETHREE",
+      "RelativePath": "images/UnicoM.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\UnicoM.png"
+    },
+    {
+      "Identity": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\12-11\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\yoga.jpg",
+      "SourceId": "GYM_MILESTONETHREE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\12-11\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\",
       "BasePath": "_content/GYM_MILESTONETHREE",
       "RelativePath": "images/yoga.jpg",
       "AssetKind": "All",

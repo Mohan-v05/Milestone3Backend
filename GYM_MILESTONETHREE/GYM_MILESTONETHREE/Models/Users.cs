@@ -11,7 +11,7 @@ namespace GYM_MILESTONETHREE.Models
         [Required]
         public string Name { get; set; }
 
-        public string email {  get; set; }
+        public string Email {  get; set; }
 
         public Role Role { get; set; }
 
@@ -19,9 +19,13 @@ namespace GYM_MILESTONETHREE.Models
 
         public Address? Address { get; set; }
 
+        public string Gender { get; set; }
+
         public string PasswordHashed { get; set; }
 
         public ICollection<Enrollments>? Enrollment { get; set; }
+
+        public decimal? Fees { get; set; }
 
         public Boolean IsActivated { get; set; } = false ;
     }

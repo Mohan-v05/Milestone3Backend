@@ -2,11 +2,14 @@
 using GYM_MILESTONETHREE.IRepository;
 using GYM_MILESTONETHREE.IService;
 using GYM_MILESTONETHREE.Models;
+using GYM_MILESTONETHREE.Repository;
 using GYM_MILESTONETHREE.RequestModels;
+using System.Net.Mail;
+using System.Net;
 
 namespace GYM_MILESTONETHREE.Service
 {
-    public class PaymentService:IPaymentService
+    public class PaymentService : IPaymentService
     {
         private readonly IPayamentsRepository _paymentsRepository;
         private readonly IUserRepository _userrepository;
@@ -21,9 +24,9 @@ namespace GYM_MILESTONETHREE.Service
         {
             try
             {
-                var user = await _userrepository.GetById(req.memberid);
-                var userAvailable = await _userrepository.UserExists(req.memberid);
-                var admin = await _userrepository.GetById(req.recievedBy);
+                var user = await _userrepository.GetUserByIdAsync(req.memberid);
+
+                var admin = await _userrepository.GetUserByIdAsync(req.recievedBy);
                 if (user != null)
                 {
                     Payments payment = new Payments();
@@ -48,8 +51,9 @@ namespace GYM_MILESTONETHREE.Service
                             payment.Description = $"Initial fee paid \n Payee:{user.Name} \n receiver:{admin.Name}";
                             user.IsActivated = true;
                         }
+
                         var data = await _paymentsRepository.AddPayment(payment);
-                      
+
                     }
                     return "Payment succesful";
                 }
@@ -57,20 +61,26 @@ namespace GYM_MILESTONETHREE.Service
                 {
                     return "user notFound";
                 }
-                
-              
+
+
             }
-            catch(Exception ex) {
+            catch (Exception ex)
             {
                 return ex.Message;
             }
 
-
-
-
-            }
-             
-
         }
+        public async Task<IEnumerable<Payments>> GetAllPaymentsAsync()
+        {
+            return await _paymentsRepository.GetAllPaymentsAsync();
+        }
+
+        public async Task<Payments> GetPaymentByIdAsync(Guid paymentId)
+        {
+            return await _paymentsRepository.GetPaymentByIdAsync(paymentId);
+        }
+
     }
 }
+
+

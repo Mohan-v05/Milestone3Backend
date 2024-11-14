@@ -14,27 +14,10 @@ namespace GYM_MILESTONETHREE.Repository
         {
             _context = context;
         }
-        public async Task<Boolean> Login(loginModel loginModel)
+        public async Task<Users> GetUserByEmail(string email)
         {
-            var user = await _context.users.SingleOrDefaultAsync(r => r.email == loginModel.email);
-            if (user != null)
-            {
-
-                var IsValid = BCrypt.Net.BCrypt.Verify(loginModel.password, user.PasswordHashed);
-                if (IsValid)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
-            }
-            else
-            {
-                return false;
-            }
-
+            var user = await _context.users.SingleOrDefaultAsync(r => r.Email == email);
+            return user;
         }
 
 
@@ -57,15 +40,38 @@ namespace GYM_MILESTONETHREE.Repository
         {
             var user = await _context.users.FirstOrDefaultAsync(u=>u.Id==userId);
             return user;
-        }
+        }   
 
-        public async Task<Users> UserExists(int userId)
+        public async Task<Users> GetUserByIdAsync(int userId)
         {
-            var res = await _context.users.FindAsync(userId);
-            return res;
+            
+            var user = await _context.users.FindAsync(userId);
+
+            
+            if (user == null)
+            {
+                throw new KeyNotFoundException($"User with ID {userId} not found.");
+            }
+
+            return user;
+        }
+        public async Task<string> updateUser(Users user)
+        {
+            try
+            {
+                _context.users.Update(user);
+                await _context.SaveChangesAsync();
+                return "user updated succesful";
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
         }
 
 
 
     }
+
 }
+

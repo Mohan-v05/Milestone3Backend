@@ -10,11 +10,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 using System.Text;
 
 namespace GYM_MILESTONETHREE.Service
 {
-    public class UserService:IUserService
+    public class UserService : IUserService
     {
         private readonly IUserRepository _repository;
         private readonly IConfiguration _config;
@@ -27,27 +28,41 @@ namespace GYM_MILESTONETHREE.Service
 
         public async Task<TokenModel> login(loginModel model)
         {
-            var isValid = await _repository.Login(model);
-            if (isValid == true) 
+            var User = await _repository.GetUserByEmail(model.email);
+            if (User != null)
             {
-                return createToken();
+                var IsValid = BCrypt.Net.BCrypt.Verify(model.password, User.PasswordHashed);
+                if (IsValid)
+                {
+                    return createToken(User);
+                }
+                else
+                {
+                    throw new Exception("check Your password");
+                }
             }
             else
             {
-                throw new Exception("check Your email and password");
+                throw new Exception("User Not Found");
             }
         }
 
-        private TokenModel createToken()
+        private TokenModel createToken(Users user)
         {
             var key = _config["Jwt:key"];
             var seckey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(key));
             var credentials = new SigningCredentials(seckey, SecurityAlgorithms.HmacSha256);
 
+            var claimsList = new List<Claim>();
+            claimsList.Add(new Claim("Id", user.Id.ToString()));
+            claimsList.Add(new Claim("Name", user.Name));
+            claimsList.Add(new Claim("Email", user.Email));
+            claimsList.Add(new Claim("Role", user.Role.ToString()));
+
             var token = new JwtSecurityToken(
                 issuer: _config["Jwt:Issuer"],
                 audience: _config["Jwt:Audience"],
-               // claims: _config[],
+                claims: claimsList,
                 expires: DateTime.UtcNow.AddDays(1),
                 signingCredentials: credentials
                 );
@@ -58,28 +73,56 @@ namespace GYM_MILESTONETHREE.Service
 
         }
 
-        public async Task<string>AddUser(AddUserReq req)
+        public async Task<string> AddUser(AddUserReq req)
         {
             try
             {
+                var Address = new Address()
+                {
+                    firstLine = req.Address.firstLine,
+                    secondLine = req.Address.secondLine,
+                    city = req.Address.city,
+                };
                 var newUser = new Users()
                 {
                     Name = req.Name,
-                    email = req.email,
+                    Email = req.email,
                     Role = req.Role,
                     Nicnumber = req.Nicnumber,
+                    Gender=req.gender,
+                    Address= Address,
                     PasswordHashed = BCrypt.Net.BCrypt.HashPassword(req.Password),
                     IsActivated = req.isActivated,
                 };
 
-                var data= await _repository.AddUser(newUser);
+                var data = await _repository.AddUser(newUser);
                 return data;
             }
-            catch(Exception ex) 
+            catch (Exception ex)
             {
-              return ex.Message;
+                return ex.Message;
             }
         }
+        public async Task<Users> GetUserByIdAsync(int id)
+        {
+            try
+            {
+                var data = await _repository.GetUserByIdAsync(id);
+                if (data != null)
+                {
+                    return data;
+                }
+                else
+                {
+                    throw new Exception("User not found");
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("An error occurred while fetching the user.", ex);
+            }
+        }
+
     }
 
 }

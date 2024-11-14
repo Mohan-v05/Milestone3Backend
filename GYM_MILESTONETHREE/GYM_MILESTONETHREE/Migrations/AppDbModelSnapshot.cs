@@ -132,6 +132,37 @@ namespace GYM_MILESTONETHREE.Migrations
                     b.ToTable("Images");
                 });
 
+            modelBuilder.Entity("GYM_MILESTONETHREE.Models.PaymentNotification", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<bool>("IsEmailSent")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Message")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("NotificationDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<Guid>("PaymentId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PaymentId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("PaymentNotifications");
+                });
+
             modelBuilder.Entity("GYM_MILESTONETHREE.Models.Payments", b =>
                 {
                     b.Property<Guid>("Id")
@@ -172,6 +203,17 @@ namespace GYM_MILESTONETHREE.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal?>("Fees")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("Gender")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<bool>("IsActivated")
                         .HasColumnType("bit");
 
@@ -189,10 +231,6 @@ namespace GYM_MILESTONETHREE.Migrations
 
                     b.Property<int>("Role")
                         .HasColumnType("int");
-
-                    b.Property<string>("email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -224,6 +262,25 @@ namespace GYM_MILESTONETHREE.Migrations
                         .IsRequired();
 
                     b.Navigation("GymProgram");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("GYM_MILESTONETHREE.Models.PaymentNotification", b =>
+                {
+                    b.HasOne("GYM_MILESTONETHREE.Models.Payments", "Payment")
+                        .WithMany()
+                        .HasForeignKey("PaymentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("GYM_MILESTONETHREE.Models.Users", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Payment");
 
                     b.Navigation("User");
                 });

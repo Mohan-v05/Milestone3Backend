@@ -1,4 +1,5 @@
 ﻿using GYM_MILESTONETHREE.IService;
+using GYM_MILESTONETHREE.Models;
 using GYM_MILESTONETHREE.RequestModels;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
@@ -42,6 +43,20 @@ namespace GYM_MILESTONETHREE.Controllers
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpGet("GetUserbyId/{id}")]
+        public async Task<IActionResult> GetUserByIdAsync(int id)
+        {
+            try
+            {
+                var data = await _userService.GetUserByIdAsync(id);
+                return Ok(data);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest($"An error occurred: {ex.Message}");
             }
         }
 

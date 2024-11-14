@@ -27,11 +27,24 @@ namespace GYM_MILESTONETHREE
             builder.Services.AddDbContext<AppDb>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DbConnection")));
             builder.Services.AddScoped<IProgramService, ProgramService>();
             builder.Services.AddScoped<IGymProgramRepository, GymProgramsRepository>();
+           
             builder.Services.AddScoped<IPayamentsRepository , PaymentRepository>();
+            builder.Services.AddScoped<IPaymentService, PaymentService>();
 
             builder.Services.AddScoped<IUserService, UserService>();
             builder.Services.AddScoped<IUserRepository, UserRepository>();
-            builder.Services.AddScoped<IPaymentService, PaymentService>();
+
+
+            builder.Services.AddScoped<IEnrollementService, EnrollementService>();
+            builder.Services.AddScoped<IEnrollmentRepository, EnrollmentRepository>();
+
+            // Register the PaymentNotificationService in DI container
+            builder.Services.AddScoped<PaymentNotificationService>();
+
+            // Register other services like IEmailSender, ILogger, etc.
+            builder.Services.AddScoped<IEmailSender, EmailSender>(); // Assuming EmailSender implements IEmailSender
+            builder.Services.AddScoped<ILogger<PaymentNotificationService>, Logger<PaymentNotificationService>>();
+
             const string policyName = "CorsPolicy";
             builder.Services.AddCors(options =>
             {

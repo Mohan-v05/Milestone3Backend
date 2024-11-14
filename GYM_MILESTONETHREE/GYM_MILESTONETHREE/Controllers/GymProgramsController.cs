@@ -20,8 +20,8 @@ namespace GYM_MILESTONETHREE.Controllers
     public class GymProgramsController : ControllerBase
     {
         private readonly AppDb _context;
-        //private readonly string _imageFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images");
-        private readonly string _imageFolder= @"C:\Users\UT01146\Desktop\11-12\Milestone3FrontEnd\y\public";
+        private readonly string _imageFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images");
+        //private readonly string _imageFolder= @"C:\Users\UT01146\Desktop\11-12\Milestone3FrontEnd\y\public";
         public GymProgramsController(AppDb context)
         {
             if (!Directory.Exists(_imageFolder))

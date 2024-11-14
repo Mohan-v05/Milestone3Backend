@@ -1,4 +1,5 @@
-﻿using GYM_MILESTONETHREE.RequestModels;
+﻿using GYM_MILESTONETHREE.Models;
+using GYM_MILESTONETHREE.RequestModels;
 using GYM_MILESTONETHREE.ResponseModels;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,5 +9,6 @@ namespace GYM_MILESTONETHREE.IService
     {
        Task<string> AddUser(AddUserReq req);
        Task<TokenModel> login(loginModel model);
+        Task<Users> GetUserByIdAsync(int id);
     }
 }

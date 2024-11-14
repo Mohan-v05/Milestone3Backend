@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "R9LHwsOFLE23uTZuN6thydtWqcV+3YoHIlX93lcnG1M=",
+  "Hash": "rNmdaSwBzI8s1pv3Ov6yqJI0DBa3fqEVB3jpAcfsb98=",
   "Source": "GYM_MILESTONETHREE",
   "BasePath": "_content/GYM_MILESTONETHREE",
   "Mode": "Default",
@@ -10,10 +10,49 @@
     {
       "Name": "GYM_MILESTONETHREE\\wwwroot",
       "Source": "GYM_MILESTONETHREE",
-      "ContentRoot": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\11-11\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\UT01146\\Desktop\\11-12\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\",
       "BasePath": "_content/GYM_MILESTONETHREE",
       "Pattern": "**"
     }
   ],
-  "Assets": []
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\UT01146\\Desktop\\11-12\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\LoginImage.jpg",
+      "SourceId": "GYM_MILESTONETHREE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\UT01146\\Desktop\\11-12\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\",
+      "BasePath": "_content/GYM_MILESTONETHREE",
+      "RelativePath": "images/LoginImage.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\LoginImage.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\UT01146\\Desktop\\11-12\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\yoga.jpg",
+      "SourceId": "GYM_MILESTONETHREE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\UT01146\\Desktop\\11-12\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\",
+      "BasePath": "_content/GYM_MILESTONETHREE",
+      "RelativePath": "images/yoga.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\yoga.jpg"
+    }
+  ]
 }

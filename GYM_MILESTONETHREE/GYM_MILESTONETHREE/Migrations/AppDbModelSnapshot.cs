@@ -132,6 +132,38 @@ namespace GYM_MILESTONETHREE.Migrations
                     b.ToTable("Images");
                 });
 
+            modelBuilder.Entity("GYM_MILESTONETHREE.Models.Payments", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<decimal>("Amount")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("ExpiryDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("PaymentType")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("receiverId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("payments");
+                });
+
             modelBuilder.Entity("GYM_MILESTONETHREE.Models.Users", b =>
                 {
                     b.Property<int>("Id")
@@ -192,6 +224,17 @@ namespace GYM_MILESTONETHREE.Migrations
                         .IsRequired();
 
                     b.Navigation("GymProgram");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("GYM_MILESTONETHREE.Models.Payments", b =>
+                {
+                    b.HasOne("GYM_MILESTONETHREE.Models.Users", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("User");
                 });

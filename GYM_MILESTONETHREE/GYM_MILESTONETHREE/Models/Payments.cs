@@ -5,7 +5,7 @@ namespace GYM_MILESTONETHREE.Models
 {
     public class Payments
     {
-        Guid Id { get; set; }
+        public Guid Id { get; set; }
         public int UserId { get; set; }
         public Users? User { get; set; }
 
@@ -17,7 +17,9 @@ namespace GYM_MILESTONETHREE.Models
 
         //payment Description If others 
         public string Description {  get; set; }
-
+       
+        public DateTime? ExpiryDate { get; set; }
+        public int receiverId {  get; set; }
 
 
     }

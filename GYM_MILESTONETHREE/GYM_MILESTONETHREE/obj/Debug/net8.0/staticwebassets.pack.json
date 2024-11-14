@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\UT01146\\Desktop\\11-12\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\LoginImage.jpg",
+      "PackagePath": "staticwebassets\\images\\LoginImage.jpg"
+    },
+    {
+      "Id": "C:\\Users\\UT01146\\Desktop\\11-12\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\yoga.jpg",
+      "PackagePath": "staticwebassets\\images\\yoga.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.GYM_MILESTONETHREE.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.GYM_MILESTONETHREE.props",
+      "PackagePath": "build\\GYM_MILESTONETHREE.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.GYM_MILESTONETHREE.props",
+      "PackagePath": "buildMultiTargeting\\GYM_MILESTONETHREE.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.GYM_MILESTONETHREE.props",
+      "PackagePath": "buildTransitive\\GYM_MILESTONETHREE.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

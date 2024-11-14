@@ -16,7 +16,7 @@ namespace GYM_MILESTONETHREE.RequestModels
 
         [Required]
         public decimal Fees { get; set; }
-
+         public IFormFile image { get; set; }
 
     }
 }

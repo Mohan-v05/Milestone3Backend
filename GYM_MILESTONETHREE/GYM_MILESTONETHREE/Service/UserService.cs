@@ -47,7 +47,7 @@ namespace GYM_MILESTONETHREE.Service
             var token = new JwtSecurityToken(
                 issuer: _config["Jwt:Issuer"],
                 audience: _config["Jwt:Audience"],
-                //claims:
+               // claims: _config[],
                 expires: DateTime.UtcNow.AddDays(1),
                 signingCredentials: credentials
                 );

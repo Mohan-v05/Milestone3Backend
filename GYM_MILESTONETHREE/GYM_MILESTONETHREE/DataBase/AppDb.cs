@@ -20,6 +20,8 @@ namespace GYM_MILESTONETHREE.DataBase
         public DbSet<Enrollments>enrollments { get; set; }
 
         public DbSet<ImageModel> Images { get; set; }
+
+        public DbSet<Payments> payments { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 

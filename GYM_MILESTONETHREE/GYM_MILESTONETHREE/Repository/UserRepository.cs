@@ -52,6 +52,20 @@ namespace GYM_MILESTONETHREE.Repository
                 return "User Added Succesfull";
             }
         }
-       
+
+        public async Task<Users> GetById(int userId)
+        {
+            var user = await _context.users.FirstOrDefaultAsync(u=>u.Id==userId);
+            return user;
+        }
+
+        public async Task<Users> UserExists(int userId)
+        {
+            var res = await _context.users.FindAsync(userId);
+            return res;
+        }
+
+
+
     }
 }

@@ -7,5 +7,8 @@ namespace GYM_MILESTONETHREE.IRepository
     {
         Task<string> AddUser(Users user);
         Task<Boolean> Login(loginModel loginModel);
+        Task<Users>GetById(int userId);
+        Task<Users> UserExists(int userId);
+
     }
 }

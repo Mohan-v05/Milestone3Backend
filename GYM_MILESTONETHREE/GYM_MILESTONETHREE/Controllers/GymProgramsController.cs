@@ -11,6 +11,7 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System.Runtime.CompilerServices;
 using Microsoft.VisualStudio.Web.CodeGeneration.Design;
 using GYM_MILESTONETHREE.RequestModels;
+using GYM_MILESTONETHREE.Migrations;
 
 namespace GYM_MILESTONETHREE.Controllers
 {
@@ -19,7 +20,8 @@ namespace GYM_MILESTONETHREE.Controllers
     public class GymProgramsController : ControllerBase
     {
         private readonly AppDb _context;
-        private readonly string _imageFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images");
+        //private readonly string _imageFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images");
+        private readonly string _imageFolder= @"C:\Users\UT01146\Desktop\11-12\Milestone3FrontEnd\y\public";
         public GymProgramsController(AppDb context)
         {
             if (!Directory.Exists(_imageFolder))
@@ -30,21 +32,21 @@ namespace GYM_MILESTONETHREE.Controllers
         }
 
         // API method to create a gym program with an image upload
-        [HttpPost("create with image")]
-        public async Task<IActionResult> CreateProgramWithImage([FromForm] createProgramReq request, [FromForm] IFormFile image)
+        [HttpPost("createwithimage")]
+        public async Task<IActionResult> CreateProgramWithImage([FromForm] createProgramReq request)
         {
-            if (image == null || image.Length == 0)
+            if (request.image == null || request.image.Length == 0)
             {
                 return BadRequest("No image uploaded.");
             }
 
             // Save the image to the wwwroot/images folder
-            var fileName = Path.GetFileName(image.FileName);
+            var fileName = Path.GetFileName(request.image.FileName);
             var filePath = Path.Combine(_imageFolder, fileName);
 
             using (var stream = new FileStream(filePath, FileMode.Create))
             {
-                await image.CopyToAsync(stream);
+                await request.image.CopyToAsync(stream);
             }
 
             // Now create the GymProgram and save the image path
@@ -54,10 +56,11 @@ namespace GYM_MILESTONETHREE.Controllers
                 Description = request.Description,
                 Category = request.Category,
                 Fees = request.Fees,
-                ImagePath = $"/images/{fileName}" // Store the relative path
+                ImagePath = $"/images/{fileName}"
+               // C:\Users\UT01146\Desktop\11 - 12\Milestone3Backend\GYM_MILESTONETHREE\GYM_MILESTONETHREE\wwwroot\images\yoga.jpg
             };
 
-           
+
             _context.gymprograms.Add(gymProgram);
             await _context.SaveChangesAsync();
 
@@ -119,7 +122,7 @@ namespace GYM_MILESTONETHREE.Controllers
 
         // POST: api/GymPrograms
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPost]
+        [HttpPost("Addgym programs only")]
         public async Task<ActionResult<GymPrograms>> PostGymPrograms(createProgramReq programReq)
         {  
             var gymPrograms=new GymPrograms();
@@ -129,7 +132,7 @@ namespace GYM_MILESTONETHREE.Controllers
             gymPrograms.Category= programReq.Category;
             gymPrograms.Fees  = programReq.Fees;
           
-            _context.gymprograms.Add(gymPrograms);
+          await   _context.gymprograms.AddAsync(gymPrograms);
 
             
           

@@ -11,7 +11,9 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 using System.Runtime.CompilerServices;
 using Microsoft.VisualStudio.Web.CodeGeneration.Design;
 using GYM_MILESTONETHREE.RequestModels;
-using GYM_MILESTONETHREE.Migrations;
+using GYM_MILESTONETHREE.IRepository;
+using GYM_MILESTONETHREE.IService;
+
 
 namespace GYM_MILESTONETHREE.Controllers
 {
@@ -20,15 +22,18 @@ namespace GYM_MILESTONETHREE.Controllers
     public class GymProgramsController : ControllerBase
     {
         private readonly AppDb _context;
-        private readonly string _imageFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images");
-        //private readonly string _imageFolder= @"C:\Users\UT01146\Desktop\11-12\Milestone3FrontEnd\y\public";
-        public GymProgramsController(AppDb context)
+        private readonly  IGymProgramService _service;
+        //private readonly string _imageFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images");
+        private readonly string _imageFolder= @"X:\GymProjectFinal\Milestone3FrontEnd\y\public";
+        
+        public GymProgramsController(AppDb context,IGymProgramService service)
         {
             if (!Directory.Exists(_imageFolder))
             {
                 Directory.CreateDirectory(_imageFolder);
             }
             _context = context;
+            _service = service;
         }
 
         // API method to create a gym program with an image upload
@@ -56,7 +61,7 @@ namespace GYM_MILESTONETHREE.Controllers
                 Description = request.Description,
                 Category = request.Category,
                 Fees = request.Fees,
-                ImagePath = $"/images/{fileName}"
+                ImagePath = $"{fileName}"
                // C:\Users\UT01146\Desktop\11 - 12\Milestone3Backend\GYM_MILESTONETHREE\GYM_MILESTONETHREE\wwwroot\images\yoga.jpg
             };
 
@@ -70,22 +75,33 @@ namespace GYM_MILESTONETHREE.Controllers
 
         // GET: api/GymPrograms
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<GymPrograms>>> Getprograms()
+        public async Task<IActionResult> Getprograms()
         {
-            return await _context.gymprograms.ToListAsync();
+            try
+            {
+                var gymPrograms = await _service.GetAllGymProgramsAsync();
+                return Ok(gymPrograms);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+           
         }
 
-        // GET: api/GymPrograms/5
-        [HttpGet("get by id{id}")]
-        public async Task<ActionResult<GymPrograms>> GetGymPrograms(int id)
-        {
-            var gymPrograms = await _context.gymprograms.FindAsync(id);
 
-            if (gymPrograms == null)
+
+        // GET: api/GymPrograms/5
+        [HttpGet("get-by-id{id}")]
+        public async Task<ActionResult<GymPrograms>> GetGymProgramsbyIdAsync(int id)
+        {
+            var gymProgram = await _service.GetGymProgramsbyIdAsync(id);
+
+            if (gymProgram == null)
             {
                 return NotFound();
             }
-            return gymPrograms;
+            return gymProgram;
         }
 
 
@@ -122,53 +138,42 @@ namespace GYM_MILESTONETHREE.Controllers
 
         // POST: api/GymPrograms
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPost("Addgym programs only")]
-        public async Task<ActionResult<GymPrograms>> PostGymPrograms(createProgramReq programReq)
-        {  
-            var gymPrograms=new GymPrograms();
+        //[HttpPost("Addgym programs only")]
+        //public async Task<ActionResult<GymPrograms>> PostGymPrograms(createProgramReq programReq)
+        //{  
+        //    var gymPrograms=new GymPrograms();
             
-            gymPrograms.Name = programReq.Name;
-            gymPrograms.Description = programReq.Description;
-            gymPrograms.Category= programReq.Category;
-            gymPrograms.Fees  = programReq.Fees;
+        //    gymPrograms.Name = programReq.Name;
+        //    gymPrograms.Description = programReq.Description;
+        //    gymPrograms.Category= programReq.Category;
+        //    gymPrograms.Fees  = programReq.Fees;
           
-          await   _context.gymprograms.AddAsync(gymPrograms);
+        //  await   _context.gymprograms.AddAsync(gymPrograms);
 
             
           
 
-            return CreatedAtAction("GetGymPrograms", new { id = gymPrograms.Id }, gymPrograms);
-        }
-        // POST: api/GymProgram/upload
+        //    return CreatedAtAction("GetGymPrograms", new { id = gymPrograms.Id }, gymPrograms);
+        //}
+        
 
 
         // GET: api/Product/{id}
-        [HttpGet("{id}")]
-        public async Task<ActionResult<GymPrograms>> GetGymProgramById(int id)
-        {
-            var gymProgram = await _context.gymprograms.FindAsync(id);
+        //[HttpGet("{id}")]
+        //public async Task<ActionResult<GymPrograms>> GetGymProgramById(int id)
+        //{
+        //    var gymProgram = await _context.gymprograms.FindAsync(id);
 
-            if (gymProgram == null)
-            {
-                return NotFound();
-            }
+        //    if (gymProgram == null)
+        //    {
+        //        return NotFound();
+        //    }
 
-            return Ok(gymProgram);
-        }
-
-
-
-        private bool IsValid(IFormFile file)
-        {
-            List<string> validFormats = new List<string>() {".jpg",".png",".jpeg" };
-            var extention= "." + file.Name.Split('.')[file.FileName.Split('.').Length-1];
-            return validFormats.Contains(extention); 
-        }
+        //    return Ok(gymProgram);
+        //}
 
 
-
-
-        // DELETE: api/GymPrograms/5
+        // DELETE: api/GymPrograms/id
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteGymPrograms(int id)
         {

@@ -1,15 +1,19 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\12-11\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\LoginImage.jpg",
+      "Id": "X:\\GymProjectFinal\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\LoginImage.jpg",
       "PackagePath": "staticwebassets\\images\\LoginImage.jpg"
     },
     {
-      "Id": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\12-11\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\UnicoM.png",
+      "Id": "X:\\GymProjectFinal\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\UnicoM.png",
       "PackagePath": "staticwebassets\\images\\UnicoM.png"
     },
     {
-      "Id": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\12-11\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\yoga.jpg",
+      "Id": "X:\\GymProjectFinal\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\pullups.jpg",
+      "PackagePath": "staticwebassets\\images\\pullups.jpg"
+    },
+    {
+      "Id": "X:\\GymProjectFinal\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\yoga.jpg",
       "PackagePath": "staticwebassets\\images\\yoga.jpg"
     },
     {

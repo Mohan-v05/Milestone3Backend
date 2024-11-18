@@ -60,5 +60,18 @@ namespace GYM_MILESTONETHREE.Controllers
             }
         }
 
+        [HttpGet]
+        public async Task<IActionResult> GetAllUsersAsync()
+        {
+            try
+            {
+                var data=await _userService.GetAllUsersAsync();
+                return Ok(data);
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }

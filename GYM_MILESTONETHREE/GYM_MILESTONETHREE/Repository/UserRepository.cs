@@ -36,12 +36,7 @@ namespace GYM_MILESTONETHREE.Repository
             }
         }
 
-        public async Task<Users> GetById(int userId)
-        {
-            var user = await _context.users.FirstOrDefaultAsync(u=>u.Id==userId);
-            return user;
-        }   
-
+    
         public async Task<Users> GetUserByIdAsync(int userId)
         {
             
@@ -67,6 +62,10 @@ namespace GYM_MILESTONETHREE.Repository
             {
                 return ex.Message;
             }
+        }
+        public async Task<List<Users>> GetAllUsersAsync()
+        {
+            return await _context.users.ToListAsync();
         }
 
 

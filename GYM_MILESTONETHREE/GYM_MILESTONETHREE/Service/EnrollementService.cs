@@ -11,27 +11,32 @@ namespace GYM_MILESTONETHREE.Service
     {
         private readonly IEnrollmentRepository _enrollmentRepository;
         private readonly IUserRepository _userRepository;
-        public EnrollementService(IEnrollmentRepository enrollmentRepository,IUserRepository userRepository)
+        private readonly IGymProgramRepository _programRepository;
+        public EnrollementService(IEnrollmentRepository enrollmentRepository,IUserRepository userRepository, IGymProgramRepository programRepository)
         {
             _enrollmentRepository = enrollmentRepository;
             _userRepository = userRepository;
+            _programRepository = programRepository;
         }
 
         public async Task<EnrollementResponse> Addenrollments(NewEnrollementsReq enrollmentData)
         {
             var user =await _userRepository.GetUserByIdAsync(enrollmentData.userId);
-
+          
             List<Enrollments> enrollments = new List<Enrollments>();
-            enrollmentData.ProgramIds.ForEach(programId =>
+            enrollmentData.ProgramIds.ForEach(async programId =>
             {
+              
                 var Enrollment = new Enrollments()
                 {
                     UserId = enrollmentData.userId,
                     GymProgramId = programId,
                     EnrolledDate = DateTime.Now,
+                  
                 };
                 enrollments.Add(Enrollment);
             });
+
 
             var data = await _enrollmentRepository.AddEnrollmentsAsync(enrollments);
             var Price = await CalculateFees(enrollmentData.userId);
@@ -61,5 +66,12 @@ namespace GYM_MILESTONETHREE.Service
             });
             return EnrolledPrice;
         }
+
+        public async Task<List<GymPrograms>> GetProgramsForMemberAsync(int UserId)
+        {
+            var programs = await _enrollmentRepository.GetProgramsByUserIDAsync(UserId);
+            return programs;
+        }
+
     }
 }

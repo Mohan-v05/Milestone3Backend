@@ -62,5 +62,30 @@ namespace GYM_MILESTONETHREE.Repository
                 throw new ApplicationException($"An error occurd while Getting programs {userID}.", ex);
             }
         }
+        public async Task<List<Users>> GetUsersByProgramIDAsync(int programId)
+        {
+            if (programId <= 0)
+            {
+                throw new ArgumentException("Invalid user ID. It must be greater than 0.", nameof(programId));
+            }
+
+            try
+            {
+                var users = await _context.enrollments.
+                     Where(e => e.GymProgramId == programId)
+                    .Select(e => e.User)  // Assuming GymProgram is a navigation property
+                    .ToListAsync();
+                if (users == null)
+                {
+                    throw new Exception("program dont have any enrollments");
+                }
+                return users;
+            }
+            catch (Exception ex)
+            {
+
+                throw new ApplicationException($"An error occurd while Getting programs {programId}.", ex);
+            }
+        }
     }
 }

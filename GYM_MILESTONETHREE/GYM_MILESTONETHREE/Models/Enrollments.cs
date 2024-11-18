@@ -4,8 +4,7 @@ namespace GYM_MILESTONETHREE.Models
 {
     public class Enrollments
     {   
-        public Guid Id {  get; set; }
-
+        public Guid Id { get; set; }
         public Users User { get; set; }
 
         public int UserId { get; set; }
@@ -15,7 +14,6 @@ namespace GYM_MILESTONETHREE.Models
         public int GymProgramId { get; set; }
 
         public DateTime EnrolledDate {  get; set; }
-
 
     }
 }

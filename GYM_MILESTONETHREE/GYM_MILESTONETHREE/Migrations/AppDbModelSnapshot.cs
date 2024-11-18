@@ -132,35 +132,37 @@ namespace GYM_MILESTONETHREE.Migrations
                     b.ToTable("Images");
                 });
 
-            modelBuilder.Entity("GYM_MILESTONETHREE.Models.PaymentNotification", b =>
+            modelBuilder.Entity("GYM_MILESTONETHREE.Models.Notification", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<bool>("IsEmailSent")
-                        .HasColumnType("bit");
-
                     b.Property<string>("Message")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("NotificationDate")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<Guid>("PaymentId")
-                        .HasColumnType("uniqueidentifier");
+                    b.Property<int>("UsersId")
+                        .HasColumnType("int");
 
-                    b.Property<int>("UserId")
+                    b.Property<bool>("isRead")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("status")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("userId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("PaymentId");
+                    b.HasIndex("UsersId");
 
-                    b.HasIndex("UserId");
-
-                    b.ToTable("PaymentNotifications");
+                    b.ToTable("notification");
                 });
 
             modelBuilder.Entity("GYM_MILESTONETHREE.Models.Payments", b =>
@@ -266,23 +268,15 @@ namespace GYM_MILESTONETHREE.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("GYM_MILESTONETHREE.Models.PaymentNotification", b =>
+            modelBuilder.Entity("GYM_MILESTONETHREE.Models.Notification", b =>
                 {
-                    b.HasOne("GYM_MILESTONETHREE.Models.Payments", "Payment")
+                    b.HasOne("GYM_MILESTONETHREE.Models.Users", "Users")
                         .WithMany()
-                        .HasForeignKey("PaymentId")
+                        .HasForeignKey("UsersId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("GYM_MILESTONETHREE.Models.Users", "User")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Payment");
-
-                    b.Navigation("User");
+                    b.Navigation("Users");
                 });
 
             modelBuilder.Entity("GYM_MILESTONETHREE.Models.Payments", b =>

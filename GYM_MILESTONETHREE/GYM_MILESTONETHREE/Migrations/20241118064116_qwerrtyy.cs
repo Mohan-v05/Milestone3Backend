@@ -6,27 +6,27 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace GYM_MILESTONETHREE.Migrations
 {
     /// <inheritdoc />
-    public partial class modified : Migration
+    public partial class qwerrtyy : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.DropPrimaryKey(
-                name: "PK_programs",
-                table: "programs");
-
-            migrationBuilder.DropColumn(
-                name: "ImagePath",
-                table: "programs");
-
-            migrationBuilder.RenameTable(
-                name: "programs",
-                newName: "gymprograms");
-
-            migrationBuilder.AddPrimaryKey(
-                name: "PK_gymprograms",
-                table: "gymprograms",
-                column: "Id");
+            migrationBuilder.CreateTable(
+                name: "gymprograms",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Category = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Fees = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    ImagePath = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_gymprograms", x => x.Id);
+                });
 
             migrationBuilder.CreateTable(
                 name: "Images",
@@ -50,9 +50,13 @@ namespace GYM_MILESTONETHREE.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Role = table.Column<int>(type: "int", nullable: false),
                     Nicnumber = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Password = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Gender = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    PasswordHashed = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Fees = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
+                    IsActivated = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -107,6 +111,52 @@ namespace GYM_MILESTONETHREE.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "notification",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Message = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    UsersId = table.Column<int>(type: "int", nullable: false),
+                    userId = table.Column<int>(type: "int", nullable: false),
+                    status = table.Column<bool>(type: "bit", nullable: false),
+                    isRead = table.Column<bool>(type: "bit", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_notification", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_notification_users_UsersId",
+                        column: x => x.UsersId,
+                        principalTable: "users",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "payments",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    UserId = table.Column<int>(type: "int", nullable: false),
+                    Amount = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    PaymentType = table.Column<int>(type: "int", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    ExpiryDate = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    receiverId = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_payments", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_payments_users_UserId",
+                        column: x => x.UserId,
+                        principalTable: "users",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_Address_userId",
                 table: "Address",
@@ -123,6 +173,16 @@ namespace GYM_MILESTONETHREE.Migrations
                 name: "IX_enrollments_UserId",
                 table: "enrollments",
                 column: "UserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_notification_UsersId",
+                table: "notification",
+                column: "UsersId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_payments_UserId",
+                table: "payments",
+                column: "UserId");
         }
 
         /// <inheritdoc />
@@ -138,26 +198,16 @@ namespace GYM_MILESTONETHREE.Migrations
                 name: "Images");
 
             migrationBuilder.DropTable(
+                name: "notification");
+
+            migrationBuilder.DropTable(
+                name: "payments");
+
+            migrationBuilder.DropTable(
+                name: "gymprograms");
+
+            migrationBuilder.DropTable(
                 name: "users");
-
-            migrationBuilder.DropPrimaryKey(
-                name: "PK_gymprograms",
-                table: "gymprograms");
-
-            migrationBuilder.RenameTable(
-                name: "gymprograms",
-                newName: "programs");
-
-            migrationBuilder.AddColumn<string>(
-                name: "ImagePath",
-                table: "programs",
-                type: "nvarchar(max)",
-                nullable: true);
-
-            migrationBuilder.AddPrimaryKey(
-                name: "PK_programs",
-                table: "programs",
-                column: "Id");
         }
     }
 }

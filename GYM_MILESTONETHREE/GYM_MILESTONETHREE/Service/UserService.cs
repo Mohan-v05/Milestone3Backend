@@ -4,6 +4,7 @@ using GYM_MILESTONETHREE.Enums;
 using GYM_MILESTONETHREE.IRepository;
 using GYM_MILESTONETHREE.IService;
 using GYM_MILESTONETHREE.Models;
+using GYM_MILESTONETHREE.Repository;
 using GYM_MILESTONETHREE.RequestModels;
 using GYM_MILESTONETHREE.ResponseModels;
 using Microsoft.AspNetCore.Mvc;
@@ -121,6 +122,10 @@ namespace GYM_MILESTONETHREE.Service
             {
                 throw new ApplicationException("An error occurred while fetching the user.", ex);
             }
+        }
+        public async Task<List<Users>> GetAllUsersAsync()
+        {
+            return await _repository.GetAllUsersAsync();
         }
 
     }

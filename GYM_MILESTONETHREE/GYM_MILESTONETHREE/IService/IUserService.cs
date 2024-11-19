@@ -8,10 +8,16 @@ namespace GYM_MILESTONETHREE.IService
 {
     public interface IUserService
     {
-       Task<string> AddUser(AddUserReq req);
-       Task<TokenModel> login(loginModel model);
+        Task<string> AddUser(AddUserReq req);
+
+        Task<TokenModel> login(loginModel model);
+
         Task<Users> GetUserByIdAsync(int id);
 
         Task<List<Users>> GetAllUsersAsync();
+
+        Task<List<Users>> GetActiveUsersAsync();
+
+        Task<bool> SoftDeleteExpiredUsersAsync();
     }
 }

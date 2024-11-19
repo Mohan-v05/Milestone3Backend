@@ -4,6 +4,7 @@ using GYM_MILESTONETHREE.DataBase;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GYM_MILESTONETHREE.Migrations
 {
     [DbContext(typeof(AppDb))]
-    partial class AppDbModelSnapshot : ModelSnapshot
+    [Migration("20241119093932_Notificationupdated")]
+    partial class Notificationupdated
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -144,7 +147,7 @@ namespace GYM_MILESTONETHREE.Migrations
                     b.Property<string>("Title")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("UserId")
+                    b.Property<int?>("UsersId")
                         .HasColumnType("int");
 
                     b.Property<bool>("isRead")
@@ -153,9 +156,12 @@ namespace GYM_MILESTONETHREE.Migrations
                     b.Property<bool>("status")
                         .HasColumnType("bit");
 
+                    b.Property<int>("userId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("UsersId");
 
                     b.ToTable("notification");
                 });
@@ -264,13 +270,11 @@ namespace GYM_MILESTONETHREE.Migrations
 
             modelBuilder.Entity("GYM_MILESTONETHREE.Models.Notification", b =>
                 {
-                    b.HasOne("GYM_MILESTONETHREE.Models.Users", "User")
+                    b.HasOne("GYM_MILESTONETHREE.Models.Users", "Users")
                         .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("UsersId");
 
-                    b.Navigation("User");
+                    b.Navigation("Users");
                 });
 
             modelBuilder.Entity("GYM_MILESTONETHREE.Models.Payments", b =>

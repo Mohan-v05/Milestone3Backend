@@ -14,5 +14,8 @@ namespace GYM_MILESTONETHREE.IRepository
         Task<string> updateUser(Users user);
 
         Task<List<Users>> GetAllUsersAsync();
+        Task<List<Users>> GetActiveUsersAsync();
+        Task<bool> SoftDeleteExpiredUsersAsync();
+
     }
 }

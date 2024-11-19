@@ -10,7 +10,7 @@ namespace GYM_MILESTONETHREE.RequestModels
         public Decimal Amount { get; set; }
         public PaymentType PaymentType { get; set; }
         //payment Description If others 
-        public string Description { get; set; }
+      //  public string Description { get; set; }
         public int recievedBy {  get; set; }
         
         public int quantity {  get; set; }

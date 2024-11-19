@@ -67,8 +67,38 @@ namespace GYM_MILESTONETHREE.Repository
         {
             return await _context.users.ToListAsync();
         }
+        public async Task<List<Users>>GetActiveUsersAsync()
+        {
+           var Activeusers= await _context.users.Where(u => u.IsActivated==true).ToListAsync();
+            return Activeusers;
+        }
+
+        
+        public async Task<bool> SoftDeleteExpiredUsersAsync()
+        {
+            try {
+                var dateThreshold = DateTime.UtcNow.AddDays(-5);
 
 
+                var usersToDeactivate = await _context.users
+                    .Where(u => u.ExpiryDate != null && u.ExpiryDate.Value <= dateThreshold && u.IsActivated)
+                    .ToListAsync();
+
+                foreach (var user in usersToDeactivate)
+                {
+                    user.IsActivated = false;
+                }
+
+                _context.UpdateRange(usersToDeactivate);
+                await _context.SaveChangesAsync();
+                return true;
+            }
+            catch (Exception ex) 
+            {
+                return false;
+            }
+           
+        }
 
     }
 

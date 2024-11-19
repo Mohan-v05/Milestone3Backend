@@ -38,6 +38,9 @@ namespace GYM_MILESTONETHREE
             builder.Services.AddScoped<IEnrollementService, EnrollementService>();
             builder.Services.AddScoped<IEnrollmentRepository, EnrollmentRepository>();
 
+            builder.Services.AddScoped<INotificationRepository,NoticationRepository>();
+            builder.Services.AddScoped<INotificationService,NotificationService>();
+
             // Register the PaymentNotificationService in DI container
           //  builder.Services.AddScoped<PaymentNotificationService>();
 

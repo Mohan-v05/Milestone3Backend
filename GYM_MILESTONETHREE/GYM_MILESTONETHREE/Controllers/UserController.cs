@@ -60,7 +60,7 @@ namespace GYM_MILESTONETHREE.Controllers
             }
         }
 
-        [HttpGet]
+        [HttpGet("Getall")]
         public async Task<IActionResult> GetAllUsersAsync()
         {
             try
@@ -73,5 +73,28 @@ namespace GYM_MILESTONETHREE.Controllers
                 return BadRequest(ex.Message);
             }
         }
+        [HttpGet("GetAllActive")]
+        public async Task<IActionResult> GetActiveUsersAsync()
+        {
+            try
+            {
+                var data = await _userService.GetActiveUsersAsync();
+                return Ok(data);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> SoftDeleteExpiredUsersAsync()
+        {
+            var data=await _userService.SoftDeleteExpiredUsersAsync();
+            return Ok(data);
+        }
+
+
+
     }
 }

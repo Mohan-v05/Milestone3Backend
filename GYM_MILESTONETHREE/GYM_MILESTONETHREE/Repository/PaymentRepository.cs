@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace GYM_MILESTONETHREE.Repository
 {
-    public class PaymentRepository: IPayamentsRepository
+    public class PaymentRepository : IPayamentsRepository
     {
         private readonly AppDb _context;
 
@@ -19,21 +19,19 @@ namespace GYM_MILESTONETHREE.Repository
         {
             var data = await _context.payments.AddAsync(payment);
             await _context.SaveChangesAsync();
-            return payment;
+            return data.Entity;
         }
 
         public async Task<IEnumerable<Payments>> GetAllPaymentsAsync()
         {
             return await _context.payments
-                                  // Including the user data (optional)
+                                 // Including the user data (optional)
                                  .ToListAsync();
         }
 
         public async Task<Payments> GetPaymentByIdAsync(Guid paymentId)
         {
-            return await _context.payments
-                                
-                                 .FirstOrDefaultAsync(p => p.Id == paymentId);
+            return await _context.payments.FirstOrDefaultAsync(p => p.Id == paymentId);
         }
 
     }

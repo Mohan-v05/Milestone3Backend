@@ -128,6 +128,15 @@ namespace GYM_MILESTONETHREE.Service
             return await _repository.GetAllUsersAsync();
         }
 
+        public async Task<bool> SoftDeleteExpiredUsersAsync()
+        {
+            return await _repository.SoftDeleteExpiredUsersAsync();
+        }
+
+        public async Task<List<Users>> GetActiveUsersAsync()
+        {
+            return await _repository.GetActiveUsersAsync();
+        }
     }
 
 }

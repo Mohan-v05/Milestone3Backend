@@ -44,8 +44,8 @@ namespace GYM_MILESTONETHREE.Controllers
                 {
                     return NotFound("No payments found.");
                 }
-
-               
+                                    
+                        
                 return Ok(payments);
             }
             catch (Exception ex)

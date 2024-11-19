@@ -28,5 +28,7 @@ namespace GYM_MILESTONETHREE.Models
         public decimal? Fees { get; set; }
 
         public Boolean IsActivated { get; set; } = false ;
+
+        public DateTime? ExpiryDate { get; set; }
     }
 }

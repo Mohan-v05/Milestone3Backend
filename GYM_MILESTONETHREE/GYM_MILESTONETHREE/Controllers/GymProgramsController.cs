@@ -23,8 +23,8 @@ namespace GYM_MILESTONETHREE.Controllers
     {
         private readonly AppDb _context;
         private readonly  IGymProgramService _service;
-        //private readonly string _imageFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images");
-        private readonly string _imageFolder= @"X:\GymProjectFinal\Milestone3FrontEnd\y\public";
+        private readonly string _imageFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images");
+        //private readonly string _imageFolder= @"X:\GymProjectFinal\Milestone3FrontEnd\y\public";
         
         public GymProgramsController(AppDb context,IGymProgramService service)
         {
@@ -61,7 +61,7 @@ namespace GYM_MILESTONETHREE.Controllers
                 Description = request.Description,
                 Category = request.Category,
                 Fees = request.Fees,
-                ImagePath = $"{fileName}"
+                ImagePath = $"http://localhost:5159/images/{fileName}"
                // C:\Users\UT01146\Desktop\11 - 12\Milestone3Backend\GYM_MILESTONETHREE\GYM_MILESTONETHREE\wwwroot\images\yoga.jpg
             };
 

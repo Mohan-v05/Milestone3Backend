@@ -59,6 +59,7 @@ namespace GYM_MILESTONETHREE.Service
             claimsList.Add(new Claim("Name", user.Name));
             claimsList.Add(new Claim("Email", user.Email));
             claimsList.Add(new Claim("Role", user.Role.ToString()));
+            claimsList.Add(new Claim(ClaimTypes.Role, user.Role.ToString()));
 
             var token = new JwtSecurityToken(
                 issuer: _config["Jwt:Issuer"],

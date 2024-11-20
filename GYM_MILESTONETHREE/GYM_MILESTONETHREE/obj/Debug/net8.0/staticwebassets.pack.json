@@ -5,8 +5,16 @@
       "PackagePath": "staticwebassets\\images\\LoginImage.jpg"
     },
     {
+      "Id": "X:\\GymProjectFinal\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\OIP.jpg",
+      "PackagePath": "staticwebassets\\images\\OIP.jpg"
+    },
+    {
       "Id": "X:\\GymProjectFinal\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\UnicoM.png",
       "PackagePath": "staticwebassets\\images\\UnicoM.png"
+    },
+    {
+      "Id": "X:\\GymProjectFinal\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\chestpress.jpg",
+      "PackagePath": "staticwebassets\\images\\chestpress.jpg"
     },
     {
       "Id": "X:\\GymProjectFinal\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\pullups.jpg",

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "eSgN4kIMIICat2jKeCm7qtY8fd8YJFHmx39EKBf7szU=",
+  "Hash": "iqKLkxOrcoRelrtcwyQrxiPXb079DjypmzT1XRpSUtc=",
   "Source": "GYM_MILESTONETHREE",
   "BasePath": "_content/GYM_MILESTONETHREE",
   "Mode": "Default",
@@ -16,6 +16,25 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "X:\\GymProjectFinal\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\chestpress.jpg",
+      "SourceId": "GYM_MILESTONETHREE",
+      "SourceType": "Discovered",
+      "ContentRoot": "X:\\GymProjectFinal\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\",
+      "BasePath": "_content/GYM_MILESTONETHREE",
+      "RelativePath": "images/chestpress.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\chestpress.jpg"
+    },
     {
       "Identity": "X:\\GymProjectFinal\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\LoginImage.jpg",
       "SourceId": "GYM_MILESTONETHREE",
@@ -34,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\LoginImage.jpg"
+    },
+    {
+      "Identity": "X:\\GymProjectFinal\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\OIP.jpg",
+      "SourceId": "GYM_MILESTONETHREE",
+      "SourceType": "Discovered",
+      "ContentRoot": "X:\\GymProjectFinal\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\",
+      "BasePath": "_content/GYM_MILESTONETHREE",
+      "RelativePath": "images/OIP.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\OIP.jpg"
     },
     {
       "Identity": "X:\\GymProjectFinal\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\pullups.jpg",

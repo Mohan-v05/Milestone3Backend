@@ -7,6 +7,8 @@ using GYM_MILESTONETHREE.IService;
 using GYM_MILESTONETHREE.Service;
 using GYM_MILESTONETHREE.IRepository;
 using GYM_MILESTONETHREE.Repository;
+using System.Text;
+using Microsoft.IdentityModel.Tokens;
 
 namespace GYM_MILESTONETHREE
 {
@@ -46,7 +48,26 @@ namespace GYM_MILESTONETHREE
 
             // Register other services like IEmailSender, ILogger, etc.
             builder.Services.AddScoped<IEmailSender, EmailSender>(); // Assuming EmailSender implements IEmailSender
-         //   builder.Services.AddScoped<ILogger<PaymentNotificationService>, Logger<PaymentNotificationService>>();
+                                                                     //   builder.Services.AddScoped<ILogger<PaymentNotificationService>, Logger<PaymentNotificationService>>();
+
+            var jwtsetting = builder.Configuration.GetSection("Jwt");
+            var key = Encoding.ASCII.GetBytes(jwtsetting["Key"]!);
+
+            builder.Services.AddAuthentication()
+                .AddJwtBearer(options =>
+                {
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                      
+                        ValidateIssuer = true,
+                        ValidateAudience = true,
+                        ValidateIssuerSigningKey = true,
+                        ValidIssuer = jwtsetting["Issuer"],                
+                        ValidAudience = jwtsetting["Audience"],
+                        IssuerSigningKey = new SymmetricSecurityKey(key)  
+                    };
+                });
+
 
             const string policyName = "CorsPolicy";
             builder.Services.AddCors(options =>
@@ -79,7 +100,7 @@ namespace GYM_MILESTONETHREE
             app.UseCors("CorsPolicy");
             app.UseStaticFiles();
             app.UseHttpsRedirection();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
 

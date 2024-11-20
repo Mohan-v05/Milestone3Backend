@@ -1,5 +1,6 @@
 ﻿using GYM_MILESTONETHREE.IService;
 using GYM_MILESTONETHREE.RequestModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,6 +9,7 @@ namespace GYM_MILESTONETHREE.Controllers
     [Route("api/[controller]")]
     [ApiController]
 
+    
     public class PaymentController : ControllerBase
     {
         private IPaymentService _paymentService;
@@ -29,8 +31,9 @@ namespace GYM_MILESTONETHREE.Controllers
             {
                 return BadRequest(ex.Message);
             }
-
+          
         }
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> GetAllPayments()
         {

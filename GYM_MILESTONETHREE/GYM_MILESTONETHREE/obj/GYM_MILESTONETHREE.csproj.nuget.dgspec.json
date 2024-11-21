@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "X:\\GymProjectFinal\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj": {}
+    "X:\\Milestonethree\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj": {}
   },
   "projects": {
-    "X:\\GymProjectFinal\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj": {
+    "X:\\Milestonethree\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "X:\\GymProjectFinal\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj",
+        "projectUniqueName": "X:\\Milestonethree\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj",
         "projectName": "GYM_MILESTONETHREE",
-        "projectPath": "X:\\GymProjectFinal\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj",
+        "projectPath": "X:\\Milestonethree\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj",
         "packagesPath": "C:\\Users\\UT01146\\.nuget\\packages\\",
-        "outputPath": "X:\\GymProjectFinal\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\obj\\",
+        "outputPath": "X:\\Milestonethree\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\UT01146\\AppData\\Roaming\\NuGet\\NuGet.Config",

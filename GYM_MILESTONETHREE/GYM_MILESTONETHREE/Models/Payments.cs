@@ -10,8 +10,7 @@ namespace GYM_MILESTONETHREE.Models
         public int UserId { get; set; }
         public Users? User { get; set; }
 
-        public DateTime dateTime = DateTime.Now;
-
+        public DateTime dateTime { get; set; }
         public Decimal Amount {  get; set; }
 
         public PaymentType PaymentType { get; set; }

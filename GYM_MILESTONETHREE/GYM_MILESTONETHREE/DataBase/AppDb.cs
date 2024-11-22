@@ -32,36 +32,48 @@ namespace GYM_MILESTONETHREE.DataBase
                 .WithOne(T => T.user)
                 .HasForeignKey<Address>(A => A.userId)
                 .OnDelete(DeleteBehavior.Cascade);
-            // Configure the many-to-many relationship between Users and GymPrograms through Enrollments
 
-            //modelBuilder.Entity<Enrollments>()
-            // .HasKey(e => new { e.UserId, e.GymProgramId }); // Composite key for the Enrollment table
 
-        
+            // Configure the relationship between Payments and Users for Payer
+            //modelBuilder.Entity<Payments>()
+            //    .HasOne(p => p.Payer)
+            //    .WithMany(u => u.Payments)
+            //    .HasForeignKey(p => p.PayerId)
+            //    .OnDelete(DeleteBehavior.Restrict); // No cascading delete for Payer
+
+            
+            //modelBuilder.Entity<Payments>()
+            //    .HasOne(p => p.Payee)
+            //    .WithMany() // Payee does not need a collection of Payments in the Users model
+            //    .HasForeignKey(p => p.PayeeId)
+            //    .OnDelete(DeleteBehavior.Restrict);
+
+
+
 
             modelBuilder.Entity<Enrollments>()
                 .HasOne(e => e.User)
                 .WithMany(u => u.Enrollment)
                 .HasForeignKey(e => e.UserId)
-                .OnDelete(DeleteBehavior.Cascade);  // Optional: Define delete behavior
+                .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<Enrollments>()
                 .HasOne(e => e.GymProgram)
                 .WithMany(g => g.enrollments)
                 .HasForeignKey(e => e.GymProgramId)
-                .OnDelete(DeleteBehavior.Cascade);  // Optional: Define delete behavior
+                .OnDelete(DeleteBehavior.Cascade);
 
-            //modelBuilder.Entity<PaymentNotification>()
-            //  .HasOne(pn => pn.User) // Relationship between PaymentNotification and User
-            //  .WithMany() // No need for a navigation property in the User class for PaymentNotifications
-            //  .HasForeignKey(pn => pn.UserId)
-            //  .OnDelete(DeleteBehavior.Cascade); // Cascade delete when the related User is deleted
+            modelBuilder.Entity<Payments>()
+             .HasOne(p => p.Payer)
+             .WithMany(u => u.Payments)
+             .HasForeignKey(p => p.PayerId)
+             .OnDelete(DeleteBehavior.Restrict);  // Avoid cascade for Payer
 
-            //modelBuilder.Entity<PaymentNotification>()
-            //    .HasOne(pn => pn.Payment) // Relationship between PaymentNotification and Payment
-            //    .WithMany() // No need for a navigation property in the Payment class for PaymentNotifications
-            //    .HasForeignKey(pn => pn.PaymentId)
-            //    .OnDelete(DeleteBehavior.Cascade); // 
+            modelBuilder.Entity<Payments>()
+                .HasOne(p => p.Payee)
+                .WithMany() // No need for a collection of Payments in Users
+                .HasForeignKey(p => p.PayeeId)
+                .OnDelete(DeleteBehavior.Restrict); // Avoid cascade for Payee
 
             base.OnModelCreating(modelBuilder);
 

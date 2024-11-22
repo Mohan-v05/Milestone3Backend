@@ -7,20 +7,24 @@ namespace GYM_MILESTONETHREE.Models
     {
         [Key]
         public Guid Id { get; set; }
-        public int UserId { get; set; }
-        public Users? User { get; set; }
+
+        public Users? Payer { get; set; }
+
+        public int PayerId { get; set; }
+
+        public Users Payee { get; set; }
+
+        public int  PayeeId { get; set; }
 
         public DateTime dateTime { get; set; }
+
+        public int Quantity { get; set; }
+
         public Decimal Amount {  get; set; }
 
         public PaymentType PaymentType { get; set; }
 
-        //payment Description If others 
         public string? Description {  get; set; }
-       
-       // public DateTime? ExpiryDate { get; set; }
-        public int receiverId {  get; set; }
-
-
+      
     }
 }

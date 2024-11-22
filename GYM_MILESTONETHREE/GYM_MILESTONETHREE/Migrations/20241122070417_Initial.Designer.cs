@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GYM_MILESTONETHREE.Migrations
 {
     [DbContext(typeof(AppDb))]
-    [Migration("20241119094628_finalnotification")]
-    partial class finalnotification
+    [Migration("20241122070417_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -175,18 +175,26 @@ namespace GYM_MILESTONETHREE.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("PayeeId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PayerId")
+                        .HasColumnType("int");
+
                     b.Property<int>("PaymentType")
                         .HasColumnType("int");
 
-                    b.Property<int>("UserId")
+                    b.Property<int>("Quantity")
                         .HasColumnType("int");
 
-                    b.Property<int>("receiverId")
-                        .HasColumnType("int");
+                    b.Property<DateTime>("dateTime")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("PayeeId");
+
+                    b.HasIndex("PayerId");
 
                     b.ToTable("payments");
                 });
@@ -278,13 +286,21 @@ namespace GYM_MILESTONETHREE.Migrations
 
             modelBuilder.Entity("GYM_MILESTONETHREE.Models.Payments", b =>
                 {
-                    b.HasOne("GYM_MILESTONETHREE.Models.Users", "User")
+                    b.HasOne("GYM_MILESTONETHREE.Models.Users", "Payee")
                         .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .HasForeignKey("PayeeId")
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
-                    b.Navigation("User");
+                    b.HasOne("GYM_MILESTONETHREE.Models.Users", "Payer")
+                        .WithMany("Payments")
+                        .HasForeignKey("PayerId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Payee");
+
+                    b.Navigation("Payer");
                 });
 
             modelBuilder.Entity("GYM_MILESTONETHREE.Models.GymPrograms", b =>
@@ -297,6 +313,8 @@ namespace GYM_MILESTONETHREE.Migrations
                     b.Navigation("Address");
 
                     b.Navigation("Enrollment");
+
+                    b.Navigation("Payments");
                 });
 #pragma warning restore 612, 618
         }

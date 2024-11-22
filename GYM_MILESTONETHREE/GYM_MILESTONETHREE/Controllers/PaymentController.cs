@@ -33,7 +33,7 @@ namespace GYM_MILESTONETHREE.Controllers
             }
           
         }
-        [Authorize]
+       //[Authorize]
         [HttpGet]
         public async Task<IActionResult> GetAllPayments()
         {

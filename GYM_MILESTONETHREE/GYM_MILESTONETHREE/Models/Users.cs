@@ -25,6 +25,8 @@ namespace GYM_MILESTONETHREE.Models
 
         public ICollection<Enrollments>? Enrollment { get; set; }
 
+        public ICollection<Payments>? Payments { get; set; }
+
         public decimal? Fees { get; set; }
 
         public Boolean IsActivated { get; set; } = false ;

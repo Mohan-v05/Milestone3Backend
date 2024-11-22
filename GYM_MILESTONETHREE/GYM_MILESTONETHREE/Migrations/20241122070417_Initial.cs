@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace GYM_MILESTONETHREE.Migrations
 {
     /// <inheritdoc />
-    public partial class qwerrtyy : Migration
+    public partial class Initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -56,7 +56,8 @@ namespace GYM_MILESTONETHREE.Migrations
                     Gender = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     PasswordHashed = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Fees = table.Column<decimal>(type: "decimal(18,2)", nullable: true),
-                    IsActivated = table.Column<bool>(type: "bit", nullable: false)
+                    IsActivated = table.Column<bool>(type: "bit", nullable: false),
+                    ExpiryDate = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -116,10 +117,9 @@ namespace GYM_MILESTONETHREE.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Title = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Message = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    UsersId = table.Column<int>(type: "int", nullable: false),
-                    userId = table.Column<int>(type: "int", nullable: false),
+                    Title = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Message = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    UserId = table.Column<int>(type: "int", nullable: false),
                     status = table.Column<bool>(type: "bit", nullable: false),
                     isRead = table.Column<bool>(type: "bit", nullable: false)
                 },
@@ -127,8 +127,8 @@ namespace GYM_MILESTONETHREE.Migrations
                 {
                     table.PrimaryKey("PK_notification", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_notification_users_UsersId",
-                        column: x => x.UsersId,
+                        name: "FK_notification_users_UserId",
+                        column: x => x.UserId,
                         principalTable: "users",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -139,22 +139,29 @@ namespace GYM_MILESTONETHREE.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    UserId = table.Column<int>(type: "int", nullable: false),
+                    PayerId = table.Column<int>(type: "int", nullable: false),
+                    PayeeId = table.Column<int>(type: "int", nullable: false),
+                    dateTime = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Quantity = table.Column<int>(type: "int", nullable: false),
                     Amount = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     PaymentType = table.Column<int>(type: "int", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    ExpiryDate = table.Column<DateTime>(type: "datetime2", nullable: true),
-                    receiverId = table.Column<int>(type: "int", nullable: false)
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_payments", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_payments_users_UserId",
-                        column: x => x.UserId,
+                        name: "FK_payments_users_PayeeId",
+                        column: x => x.PayeeId,
                         principalTable: "users",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.Restrict);
+                    table.ForeignKey(
+                        name: "FK_payments_users_PayerId",
+                        column: x => x.PayerId,
+                        principalTable: "users",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateIndex(
@@ -175,14 +182,19 @@ namespace GYM_MILESTONETHREE.Migrations
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_notification_UsersId",
+                name: "IX_notification_UserId",
                 table: "notification",
-                column: "UsersId");
+                column: "UserId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_payments_UserId",
+                name: "IX_payments_PayeeId",
                 table: "payments",
-                column: "UserId");
+                column: "PayeeId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_payments_PayerId",
+                table: "payments",
+                column: "PayerId");
         }
 
         /// <inheritdoc />

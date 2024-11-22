@@ -94,7 +94,21 @@ namespace GYM_MILESTONETHREE.Controllers
             return Ok(data);
         }
 
+        [HttpDelete("{userId}")]
+        public async Task<IActionResult> DeleteUser(int userId)
+        {
+            try
+            {
+                var result = await _userService.DeleteUserByIdAsync(userId);
+                return Ok(result);
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+          
+        }
 
-
+          
     }
 }

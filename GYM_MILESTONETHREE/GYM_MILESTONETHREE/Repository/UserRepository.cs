@@ -22,17 +22,17 @@ namespace GYM_MILESTONETHREE.Repository
 
 
 
-        public async Task<string> AddUser(Users user) 
+        public async Task<Users> AddUser(Users user) 
         {
             if (user == null)
             {
-                return "user cant be null";
+                throw  new Exception( "user cant be null");
             }
             else
             {
               var data= await _context.AddAsync(user);
               await _context.SaveChangesAsync();
-                return "User Added Succesfull";
+                return data.Entity;
             }
         }
 
@@ -40,7 +40,7 @@ namespace GYM_MILESTONETHREE.Repository
         public async Task<Users> GetUserByIdAsync(int userId)
         {
             
-            var user = await _context.users.FindAsync(userId);
+            var user = await _context.users.Include(u => u.Address).FirstOrDefaultAsync(u=>u.Id==userId);
 
             
             if (user == null)
@@ -50,23 +50,24 @@ namespace GYM_MILESTONETHREE.Repository
 
             return user;
         }
-        public async Task<string> updateUser(Users user)
-        {
-            try
+        public async Task<Users> updateUser(Users user)
+        {    
+            if (user != null)
             {
-                _context.users.Update(user);
+                var data = _context.users.Update(user);
                 await _context.SaveChangesAsync();
-                return "user updated succesful";
+                return data.Entity;
             }
-            catch (Exception ex)
+            else
             {
-                return ex.Message;
+                throw new Exception("User is null");
             }
         }
         public async Task<List<Users>> GetAllUsersAsync()
         {
             return await _context.users.Include(u=>u.Address).ToListAsync();
         }
+
         public async Task<List<Users>>GetActiveUsersAsync()
         {
            var Activeusers= await _context.users.Where(u => u.IsActivated==true).ToListAsync();
@@ -74,9 +75,10 @@ namespace GYM_MILESTONETHREE.Repository
         }
 
         
-        public async Task<bool> SoftDeleteExpiredUsersAsync()
+        public async Task<List<Users>> SoftDeleteExpiredUsersAsync()
         {
-            try {
+            
+
                 var dateThreshold = DateTime.UtcNow.AddDays(-5);
 
 
@@ -88,17 +90,25 @@ namespace GYM_MILESTONETHREE.Repository
                 {
                     user.IsActivated = false;
                 }
-
+                if (usersToDeactivate.Count > 0)
+            {
                 _context.UpdateRange(usersToDeactivate);
                 await _context.SaveChangesAsync();
-                return true;
+                return usersToDeactivate;
             }
-            catch (Exception ex) 
+            else
             {
-                return false;
+                throw new Exception("No one to deactivate");
             }
-           
+                       
         }
+        public async Task<Users> DeleteUserByIdAsync(Users user)
+        {
+             _context.Remove(user);
+            await _context.SaveChangesAsync();
+            return user;
+        }
+
 
     }
 

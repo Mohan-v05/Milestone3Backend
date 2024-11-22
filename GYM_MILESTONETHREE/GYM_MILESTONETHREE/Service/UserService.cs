@@ -8,6 +8,7 @@ using GYM_MILESTONETHREE.Repository;
 using GYM_MILESTONETHREE.RequestModels;
 using GYM_MILESTONETHREE.ResponseModels;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
@@ -75,7 +76,7 @@ namespace GYM_MILESTONETHREE.Service
 
         }
 
-        public async Task<string> AddUser(AddUserReq req)
+        public async Task<Users> AddUser(AddUserReq req)
         {
             try
             {
@@ -91,18 +92,18 @@ namespace GYM_MILESTONETHREE.Service
                     Email = req.email,
                     Role = req.Role,
                     Nicnumber = req.Nicnumber,
-                    Gender=req.gender,
-                    Address= Address,
+                    Gender = req.gender,
+                    Address = Address,
                     PasswordHashed = BCrypt.Net.BCrypt.HashPassword(req.Password),
                     IsActivated = req.isActivated,
                 };
 
                 var data = await _repository.AddUser(newUser);
-                return data;
+                return newUser;
             }
             catch (Exception ex)
             {
-                return ex.Message;
+                throw ex;
             }
         }
         public async Task<Users> GetUserByIdAsync(int id)
@@ -129,15 +130,30 @@ namespace GYM_MILESTONETHREE.Service
             return await _repository.GetAllUsersAsync();
         }
 
-        public async Task<bool> SoftDeleteExpiredUsersAsync()
+        public async Task<List<Users>> SoftDeleteExpiredUsersAsync()
         {
-            return await _repository.SoftDeleteExpiredUsersAsync();
+           var data= await _repository.SoftDeleteExpiredUsersAsync();
+            return data;
         }
 
         public async Task<List<Users>> GetActiveUsersAsync()
         {
             return await _repository.GetActiveUsersAsync();
         }
-    }
 
+        public async Task<Users> DeleteUserByIdAsync(int UserId)
+        {
+            var data = await _repository.GetUserByIdAsync(UserId);
+            if (data != null)
+            {
+                return await _repository.DeleteUserByIdAsync(data);
+            }
+            else
+            {
+                throw new Exception($"Unable to Find User with Id: {UserId}");
+
+            }
+        }
+
+    }
 }

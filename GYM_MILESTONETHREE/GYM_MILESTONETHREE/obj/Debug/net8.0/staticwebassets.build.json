@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RnGAQ9ITZPQMvX/hnypH5ziaSpeyRLJtKVJGsWeG1EE=",
+  "Hash": "o+Jy00H0Qz8av7nSaL4dtR0r6eRxWqnSxZ/GejVBT5Y=",
   "Source": "GYM_MILESTONETHREE",
   "BasePath": "_content/GYM_MILESTONETHREE",
   "Mode": "Default",
@@ -34,6 +34,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\chestpress.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\UT01146\\Desktop\\GymProjectFinal\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\dumbbell-front-raise.png",
+      "SourceId": "GYM_MILESTONETHREE",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\UT01146\\Desktop\\GymProjectFinal\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\",
+      "BasePath": "_content/GYM_MILESTONETHREE",
+      "RelativePath": "images/dumbbell-front-raise.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\dumbbell-front-raise.png"
     },
     {
       "Identity": "C:\\Users\\UT01146\\Desktop\\GymProjectFinal\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\LoginImage.jpg",

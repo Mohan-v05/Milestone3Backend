@@ -128,16 +128,25 @@ namespace GYM_MILESTONETHREE.Service
         {
             // Set initial payment amount
             decimal initalPaymentAmount = 1000;
-            payment.Amount = initalPaymentAmount - req.AnyDiscount; 
+            
+            payment.Amount = initalPaymentAmount - req.AnyDiscount;
+            if (req.Amount - payment.Amount >= 0)
+            {
+                // Construct payment description
+                payment.Description = $"Initial fee paid by Payer: {user.Name} Payee: {admin.Name} Initial fee amount: {initalPaymentAmount} - Discount: {req.AnyDiscount} Balance: {req.Amount - payment.Amount}";
 
-            // Construct payment description
-            payment.Description = $"Initial fee paid by Payer: {user.Name} Payee: {admin.Name} Initial fee amount: {initalPaymentAmount} - Discount: {req.AnyDiscount} Balance: {payment.Amount - req.Amount}";
+                // Activate the user
+                user.IsActivated = true;
 
-            // Activate the user
-            user.IsActivated = true;
+                // Generate notification message
+                notification.Message = $"Dear {user.Name}, We have received your payment of {payment.Amount} on {payment.dateTime}. You are now a member of Unicom Fitness. Thanks for doing business with us.";
 
-            // Generate notification message
-            notification.Message = $"Dear {user.Name}, We have received your payment of {payment.Amount} on {payment.dateTime}. You are now a member of Unicom Fitness. Thanks for doing business with us.";
+            }
+            else
+            {
+                throw new Exception(" Insufficient amount ");
+            }
+             
         }
 
 

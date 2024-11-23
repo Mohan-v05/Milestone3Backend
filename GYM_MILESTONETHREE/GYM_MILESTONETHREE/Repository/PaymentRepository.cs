@@ -24,14 +24,14 @@ namespace GYM_MILESTONETHREE.Repository
 
         public async Task<IEnumerable<Payments>> GetAllPaymentsAsync()
         {
-            return await _context.payments
-                                 // Including the user data (optional)
-                                 .ToListAsync();
+            return await _context.payments.Include(p=>p.Payer).ToListAsync();
+
         }
 
         public async Task<Payments> GetPaymentByIdAsync(Guid paymentId)
         {
-            return await _context.payments.FirstOrDefaultAsync(p => p.Id == paymentId);
+            var data= await _context.payments.Include(p => p.Payer).FirstOrDefaultAsync(p => p.Id == paymentId);
+            return data;
         }
 
     }

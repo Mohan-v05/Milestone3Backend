@@ -4,6 +4,7 @@ using GYM_MILESTONETHREE.IService;
 using GYM_MILESTONETHREE.Models;
 using GYM_MILESTONETHREE.RequestModels;
 using GYM_MILESTONETHREE.ResponseModels;
+using System.Linq;
 
 namespace GYM_MILESTONETHREE.Service
 {
@@ -22,18 +23,20 @@ namespace GYM_MILESTONETHREE.Service
         public async Task<EnrollementResponse> Addenrollments(NewEnrollementsReq enrollmentData)
         {
             var user =await _userRepository.GetUserByIdAsync(enrollmentData.userId);
-          
+        
             List<Enrollments> enrollments = new List<Enrollments>();
             enrollmentData.ProgramIds.ForEach(async programId =>
             {
-              
+             
                 var Enrollment = new Enrollments()
                 {
-                    UserId = enrollmentData.userId,
+                   
+                UserId = enrollmentData.userId,
                     GymProgramId = programId,
                     EnrolledDate = DateTime.Now,
                   
                 };
+               
                 enrollments.Add(Enrollment);
             });
 

@@ -19,7 +19,9 @@ namespace GYM_MILESTONETHREE.Repository
 
             if (enrollments == null || !enrollments.Any())
             {
+
                 throw new ArgumentException("Enrollments list cannot be null or empty.");
+
             }
 
             try
@@ -33,7 +35,7 @@ namespace GYM_MILESTONETHREE.Repository
                 throw new ApplicationException("An error occurred while adding enrollments.", ex);
             }
         }
-
+        
 
         public async Task<List<GymPrograms>> GetProgramsByUserIDAsync(int userID)
         {

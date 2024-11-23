@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\images\\chestpress.jpg"
     },
     {
+      "Id": "C:\\Users\\UT01146\\Desktop\\GymProjectFinal\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\dumbbell-front-raise.png",
+      "PackagePath": "staticwebassets\\images\\dumbbell-front-raise.png"
+    },
+    {
       "Id": "C:\\Users\\UT01146\\Desktop\\GymProjectFinal\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\pullups.jpg",
       "PackagePath": "staticwebassets\\images\\pullups.jpg"
     },

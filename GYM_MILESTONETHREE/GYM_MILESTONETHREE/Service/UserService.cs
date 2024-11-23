@@ -87,7 +87,7 @@ namespace GYM_MILESTONETHREE.Service
                     city = req.Address.city,
                 };
                 var newUser = new Users()
-                {
+                { 
                     Name = req.Name,
                     Email = req.email,
                     Role = req.Role,

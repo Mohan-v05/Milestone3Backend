@@ -104,7 +104,7 @@ namespace GYM_MILESTONETHREE.Repository
         }
         public async Task<Users> DeleteUserByIdAsync(Users user)
         {
-             _context.Remove(user);
+             _context.Update(user);
             await _context.SaveChangesAsync();
             return user;
         }

@@ -37,7 +37,7 @@ namespace GYM_MILESTONETHREE.Controllers
         {
             try
             {
-               var data= await _userService.AddUser(req);
+                var data = await _userService.AddUser(req);
                 return Ok(data);
             }
             catch (Exception ex)
@@ -65,10 +65,10 @@ namespace GYM_MILESTONETHREE.Controllers
         {
             try
             {
-                var data=await _userService.GetAllUsersAsync();
+                var data = await _userService.GetAllUsersAsync();
                 return Ok(data);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
@@ -87,27 +87,45 @@ namespace GYM_MILESTONETHREE.Controllers
             }
         }
 
-        [HttpPut]
+        [HttpGet]
         public async Task<IActionResult> SoftDeleteExpiredUsersAsync()
         {
-            var data=await _userService.SoftDeleteExpiredUsersAsync();
+            var data = await _userService.SoftDeleteExpiredUsersAsync();
             return Ok(data);
         }
 
         [HttpDelete("{userId}")]
-        public async Task<IActionResult> DeleteUser(int userId)
+        public async Task<IActionResult> SoftDelete(int userId)
         {
             try
             {
                 var result = await _userService.DeleteUserByIdAsync(userId);
                 return Ok(result);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
-          
+
         }
+
+
+
+
+        //[HttpDelete("Hard{userId}")]
+        //public async Task<IActionResult> DeleteUser(int userId)
+        //{
+        //    try
+        //    {
+        //        var result = await _userService.DeleteUserByIdAsync(userId);
+        //        return Ok(result);
+        //    }
+        //    catch(Exception ex)
+        //    {
+        //        return BadRequest(ex.Message);
+        //    }
+          
+        //}
 
           
     }

@@ -144,6 +144,7 @@ namespace GYM_MILESTONETHREE.Service
         public async Task<Users> DeleteUserByIdAsync(int UserId)
         {
             var data = await _repository.GetUserByIdAsync(UserId);
+            data.IsActivated = false;
             if (data != null)
             {
                 return await _repository.DeleteUserByIdAsync(data);

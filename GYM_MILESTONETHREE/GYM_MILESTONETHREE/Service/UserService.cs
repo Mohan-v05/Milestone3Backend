@@ -9,8 +9,10 @@ using GYM_MILESTONETHREE.RequestModels;
 using GYM_MILESTONETHREE.ResponseModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.CSharp;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Org.BouncyCastle.Ocsp;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -154,6 +156,39 @@ namespace GYM_MILESTONETHREE.Service
                 throw new Exception($"Unable to Find User with Id: {UserId}");
 
             }
+        }
+        public async Task<Users> ChangePasswordAsync(ChangePasswordRequest request)
+        {
+            var data= await _repository.GetUserByIdAsync(request.Id);
+            if(data != null)
+            {
+                if (data.Nicnumber == request.Nic)
+                {
+                    var IsValid = BCrypt.Net.BCrypt.Verify(request.OldPassword, data.PasswordHashed);
+
+                    if (IsValid)
+                    {
+                        data.PasswordHashed = BCrypt.Net.BCrypt.HashPassword(request.NewPassword);
+                        var response = await _repository.updateUser(data);
+                        return response;
+                    }
+                    else
+                    {
+                        throw (new Exception("incorrectpassword"));
+                    }
+                }
+                else
+                {
+                    throw new Exception("invalid Nic");
+                }
+
+
+            }
+            else
+            {
+                throw new Exception("User not founf");
+            }
+
         }
 
     }

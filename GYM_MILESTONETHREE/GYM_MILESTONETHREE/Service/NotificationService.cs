@@ -2,6 +2,7 @@
 using GYM_MILESTONETHREE.IService;
 using GYM_MILESTONETHREE.Models;
 using GYM_MILESTONETHREE.RequestModels;
+using Microsoft.Identity.Client;
 
 namespace GYM_MILESTONETHREE.Service
 {
@@ -38,6 +39,36 @@ namespace GYM_MILESTONETHREE.Service
            
           
         }
+        
+        public async Task<Notification> markAsRead(Guid notificationid)
+        {
+            var data= await _notificationRepository.GetNotificationWithId(notificationid);
 
+           if (data != null)
+            {
+                data.isRead = true;
+               var data2= await _notificationRepository.markAsRead(data); 
+                return data2;
+            }
+            else
+            {
+                throw new Exception("nNOtification not found");
+            }
+        }
+        public async Task<Notification> RemoveNotificationAsync(Guid notificationid)
+        {
+            var data = await _notificationRepository.GetNotificationWithId(notificationid);
+
+            if (data != null)
+            {
+                data.status = false;
+                var data2 = await _notificationRepository.Delete(data);
+                return data2;
+            }
+            else
+            {
+                throw new Exception("nNOtification not found");
+            }
+        }
     }
 }

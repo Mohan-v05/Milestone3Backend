@@ -18,6 +18,25 @@ namespace GYM_MILESTONETHREE.Repository
             await _context.SaveChangesAsync();
             return data.Entity;
         }
+        public async Task<Notification> GetNotificationWithId(Guid guid)
+        {
+            var data = await _context.notification.FindAsync(guid);
+            return data;
+        }
 
+        public async Task<Notification> markAsRead(Notification data)
+        {
+            var response =  _context.notification.Update(data);
+            await _context.SaveChangesAsync();
+            return response.Entity;
+        }
+
+        public async Task<Notification> Delete(Notification data)
+        {
+            var res = _context.notification.Remove(data);
+            await _context.SaveChangesAsync();
+            return res.Entity;
+
+        }
     }
 }

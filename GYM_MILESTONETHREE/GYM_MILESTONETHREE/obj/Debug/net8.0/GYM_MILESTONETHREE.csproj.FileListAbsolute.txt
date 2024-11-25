@@ -2656,3 +2656,9 @@ C:\Users\UT01146\Desktop\Milestone3Backend\GYM_MILESTONETHREE\GYM_MILESTONETHREE
 C:\Users\UT01146\Desktop\Milestone3Backend\GYM_MILESTONETHREE\GYM_MILESTONETHREE\obj\Debug\net8.0\GYM_MILESTONETHREE.pdb
 C:\Users\UT01146\Desktop\Milestone3Backend\GYM_MILESTONETHREE\GYM_MILESTONETHREE\obj\Debug\net8.0\GYM_MILESTONETHREE.genruntimeconfig.cache
 C:\Users\UT01146\Desktop\Milestone3Backend\GYM_MILESTONETHREE\GYM_MILESTONETHREE\obj\Debug\net8.0\ref\GYM_MILESTONETHREE.dll
+C:\Users\mohan\OneDrive\Desktop\MS-3\Milestone3Backend\GYM_MILESTONETHREE\GYM_MILESTONETHREE\bin\Debug\net8.0\GYM_MILESTONETHREE.staticwebassets.runtime.json
+C:\Users\mohan\OneDrive\Desktop\MS-3\Milestone3Backend\GYM_MILESTONETHREE\GYM_MILESTONETHREE\bin\Debug\net8.0\BCrypt.Net-Next.dll
+C:\Users\mohan\OneDrive\Desktop\MS-3\Milestone3Backend\GYM_MILESTONETHREE\GYM_MILESTONETHREE\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\mohan\OneDrive\Desktop\MS-3\Milestone3Backend\GYM_MILESTONETHREE\GYM_MILESTONETHREE\bin\Debug\net8.0\MailKit.dll
+C:\Users\mohan\OneDrive\Desktop\MS-3\Milestone3Backend\GYM_MILESTONETHREE\GYM_MILESTONETHREE\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\mohan\OneDrive\Desktop\MS-3\Milestone3Backend\GYM_MILESTONETHREE\GYM_MILESTONETHREE\bin\Debug\net8.0\MimeKit.dll

@@ -21,5 +21,7 @@ namespace GYM_MILESTONETHREE.IService
         Task<List<Users>> SoftDeleteExpiredUsersAsync();
 
         Task<Users> DeleteUserByIdAsync(int userId);
+
+        Task<Users> ChangePasswordAsync(ChangePasswordRequest request);
     }
 }

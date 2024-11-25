@@ -40,7 +40,7 @@ namespace GYM_MILESTONETHREE.Repository
         public async Task<Users> GetUserByIdAsync(int userId)
         {
             
-            var user = await _context.users.Include(u => u.Address).FirstOrDefaultAsync(u=>u.Id==userId);
+            var user = await _context.users.Include(u => u.Address).Include(u=>u.Payments).Include(u=>u.Enrollment).ThenInclude(e=>e.GymProgram).Include(u=>u.Notification).FirstOrDefaultAsync(u=>u.Id==userId);
 
             
             if (user == null)

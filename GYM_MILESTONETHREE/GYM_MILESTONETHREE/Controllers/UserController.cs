@@ -108,25 +108,45 @@ namespace GYM_MILESTONETHREE.Controllers
             }
 
         }
+        [HttpPost("change-password")]
+        public async Task<IActionResult> ChangePassword([FromBody] ChangePasswordRequest request)
+        {
+            try
+            {
+                var result = await _userService.ChangePasswordAsync(request);
+
+                return Ok(result);
+
+            }
+            catch (Exception ex)
+            {
+                {
+                    return BadRequest(ex);
+                }
+
+
+
+            }
 
 
 
 
-        //[HttpDelete("Hard{userId}")]
-        //public async Task<IActionResult> DeleteUser(int userId)
-        //{
-        //    try
-        //    {
-        //        var result = await _userService.DeleteUserByIdAsync(userId);
-        //        return Ok(result);
-        //    }
-        //    catch(Exception ex)
-        //    {
-        //        return BadRequest(ex.Message);
-        //    }
-          
-        //}
+            //[HttpDelete("Hard{userId}")]
+            //public async Task<IActionResult> DeleteUser(int userId)
+            //{
+            //    try
+            //    {
+            //        var result = await _userService.DeleteUserByIdAsync(userId);
+            //        return Ok(result);
+            //    }
+            //    catch(Exception ex)
+            //    {
+            //        return BadRequest(ex.Message);
+            //    }
 
-          
+            //}
+
+
+        }
     }
 }

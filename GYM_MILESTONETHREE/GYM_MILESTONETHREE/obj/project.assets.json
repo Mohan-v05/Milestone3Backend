@@ -8114,19 +8114,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\UT01146\\.nuget\\packages\\": {}
+    "C:\\Users\\mohan\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\UT01146\\Desktop\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj",
+      "projectUniqueName": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj",
       "projectName": "GYM_MILESTONETHREE",
-      "projectPath": "C:\\Users\\UT01146\\Desktop\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj",
-      "packagesPath": "C:\\Users\\UT01146\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\UT01146\\Desktop\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\obj\\",
+      "projectPath": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj",
+      "packagesPath": "C:\\Users\\mohan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\UT01146\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\mohan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8220,7 +8225,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

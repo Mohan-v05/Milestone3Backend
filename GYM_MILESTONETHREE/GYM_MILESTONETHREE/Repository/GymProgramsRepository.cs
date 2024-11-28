@@ -16,14 +16,14 @@ namespace GYM_MILESTONETHREE.Repository
         }
         public async Task<GymPrograms> GetGymProgramsbyIdAsync(int id)
         {
-            var gymProgram = await _context.gymprograms.FirstOrDefaultAsync( p => p.Id ==id);
+            var gymProgram = await _context.gymprograms.Include(g=>g.enrollments).FirstOrDefaultAsync( p => p.Id ==id);
             return gymProgram;
          
         }
 
         public async Task<List<GymPrograms>> GetAllGymProgramsAsync()
         {
-            var programs = await _context.gymprograms.ToListAsync();
+            var programs = await _context.gymprograms.Include(g => g.enrollments).ToListAsync();
             return programs;
         }
     }

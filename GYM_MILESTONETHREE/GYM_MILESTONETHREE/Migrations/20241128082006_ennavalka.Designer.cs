@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GYM_MILESTONETHREE.Migrations
 {
     [DbContext(typeof(AppDb))]
-    [Migration("20241122070417_Initial")]
-    partial class Initial
+    [Migration("20241128082006_ennavalka")]
+    partial class ennavalka
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -178,7 +178,7 @@ namespace GYM_MILESTONETHREE.Migrations
                     b.Property<int>("PayeeId")
                         .HasColumnType("int");
 
-                    b.Property<int>("PayerId")
+                    b.Property<int?>("PayerId")
                         .HasColumnType("int");
 
                     b.Property<int>("PaymentType")
@@ -276,7 +276,7 @@ namespace GYM_MILESTONETHREE.Migrations
             modelBuilder.Entity("GYM_MILESTONETHREE.Models.Notification", b =>
                 {
                     b.HasOne("GYM_MILESTONETHREE.Models.Users", "User")
-                        .WithMany()
+                        .WithMany("Notification")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -289,14 +289,13 @@ namespace GYM_MILESTONETHREE.Migrations
                     b.HasOne("GYM_MILESTONETHREE.Models.Users", "Payee")
                         .WithMany()
                         .HasForeignKey("PayeeId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("GYM_MILESTONETHREE.Models.Users", "Payer")
                         .WithMany("Payments")
                         .HasForeignKey("PayerId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.SetNull);
 
                     b.Navigation("Payee");
 
@@ -313,6 +312,8 @@ namespace GYM_MILESTONETHREE.Migrations
                     b.Navigation("Address");
 
                     b.Navigation("Enrollment");
+
+                    b.Navigation("Notification");
 
                     b.Navigation("Payments");
                 });

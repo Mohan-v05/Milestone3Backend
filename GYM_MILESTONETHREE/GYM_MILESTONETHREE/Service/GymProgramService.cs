@@ -26,7 +26,7 @@ namespace GYM_MILESTONETHREE.Service
         }
 
 
-        public async Task<List<Gymprogramsresponse>> GetAllGymProgramsAsync()
+        public async Task<List<GymPrograms>> GetAllGymProgramsAsync()
         {
             var data = await _repository.GetAllGymProgramsAsync();
 
@@ -36,22 +36,8 @@ namespace GYM_MILESTONETHREE.Service
             }
 
             // Use Task.WhenAll to await all asynchronous tasks in the Select
-            var responselist = await Task.WhenAll(data.Select(async d =>
-            {
-                return new Gymprogramsresponse
-                {
-                    Id = d.Id,
-                    Name = d.Name,
-                    Description = d.Description,
-                    Category = d.Category,
-                    Fees = d.Fees,
-                    ImagePath = d.ImagePath,
-                    //NoofEnrollment = await CalculateLength(d.Id) // Await the task here
-                };
-            }));
 
-            // Convert the result from an array to a List
-            return responselist.ToList();
+            return data;
         }
 
         private async Task<int> CalculateLength(int id)

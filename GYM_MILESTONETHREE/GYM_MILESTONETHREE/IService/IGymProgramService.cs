@@ -6,6 +6,6 @@ namespace GYM_MILESTONETHREE.IService
     public interface IGymProgramService
     {
         Task<GymPrograms> GetGymProgramsbyIdAsync(int id);
-        Task<List<Gymprogramsresponse>> GetAllGymProgramsAsync();
+        Task<List<GymPrograms>> GetAllGymProgramsAsync();
     }
 }

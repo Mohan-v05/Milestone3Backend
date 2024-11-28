@@ -10,7 +10,7 @@ namespace GYM_MILESTONETHREE.Models
 
         public Users? Payer { get; set; }
 
-        public int PayerId { get; set; }
+        public int? PayerId { get; set; }
 
         public Users Payee { get; set; }
 

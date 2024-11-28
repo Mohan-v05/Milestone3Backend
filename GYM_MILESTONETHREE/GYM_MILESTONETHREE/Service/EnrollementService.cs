@@ -81,8 +81,14 @@ namespace GYM_MILESTONETHREE.Service
             var data = await _enrollmentRepository.getEnrollmentsById(id);
             if (data != null)
             {
-
                 var res = await _enrollmentRepository.deleteEnrollmentasync(data);
+
+                var user= await _userRepository.GetUserByIdAsync(data.UserId);
+
+                user.Fees=await CalculateFees(data.UserId);
+
+                await _userRepository.updateUser(user);
+ 
                 return res;
             }
             throw new Exception("enrollment not found");

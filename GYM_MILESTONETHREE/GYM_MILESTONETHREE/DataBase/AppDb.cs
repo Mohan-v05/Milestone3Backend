@@ -43,13 +43,14 @@ namespace GYM_MILESTONETHREE.DataBase
              .HasOne(p => p.Payer)
              .WithMany(u => u.Payments)
              .HasForeignKey(p => p.PayerId)
-             .OnDelete(DeleteBehavior.Restrict);  
+             .OnDelete(DeleteBehavior.SetNull);  
 
             modelBuilder.Entity<Payments>()
                 .HasOne(p => p.Payee)
                 .WithMany() 
                 .HasForeignKey(p => p.PayeeId)
-                .OnDelete(DeleteBehavior.Restrict); 
+                .OnDelete(DeleteBehavior.Cascade); 
+
                  base.OnModelCreating(modelBuilder);
 
 

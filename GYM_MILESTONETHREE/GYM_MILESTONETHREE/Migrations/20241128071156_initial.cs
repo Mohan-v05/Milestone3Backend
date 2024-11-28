@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace GYM_MILESTONETHREE.Migrations
 {
     /// <inheritdoc />
-    public partial class Initial : Migration
+    public partial class initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -139,7 +139,7 @@ namespace GYM_MILESTONETHREE.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    PayerId = table.Column<int>(type: "int", nullable: false),
+                    PayerId = table.Column<int>(type: "int", nullable: true),
                     PayeeId = table.Column<int>(type: "int", nullable: false),
                     dateTime = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Quantity = table.Column<int>(type: "int", nullable: false),
@@ -161,7 +161,7 @@ namespace GYM_MILESTONETHREE.Migrations
                         column: x => x.PayerId,
                         principalTable: "users",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.SetNull);
                 });
 
             migrationBuilder.CreateIndex(

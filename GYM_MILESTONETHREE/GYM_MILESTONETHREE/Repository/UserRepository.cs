@@ -65,7 +65,7 @@ namespace GYM_MILESTONETHREE.Repository
         }
         public async Task<List<Users>> GetAllUsersAsync()
         {
-            return await _context.users.Include(u=>u.Address).Include(u=>u.Enrollment).ToListAsync();
+            return await _context.users.Include(u=>u.Address).Include(u=>u.Enrollment).ThenInclude(e => e.GymProgram).ToListAsync();
         }
 
         public async Task<List<Users>>GetActiveUsersAsync()

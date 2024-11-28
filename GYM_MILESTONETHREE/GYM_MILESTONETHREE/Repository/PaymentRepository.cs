@@ -24,7 +24,7 @@ namespace GYM_MILESTONETHREE.Repository
 
         public async Task<IEnumerable<Payments>> GetAllPaymentsAsync()
         {
-            return await _context.payments.Include(p=>p.Payer).ToListAsync();
+            return await _context.payments.Include(p=>p.Payer).Include(p => p.Payee).ToListAsync();
 
         }
 

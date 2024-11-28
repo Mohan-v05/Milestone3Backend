@@ -3,6 +3,7 @@ using GYM_MILESTONETHREE.IService;
 using GYM_MILESTONETHREE.Models;
 using GYM_MILESTONETHREE.RequestModels;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -44,7 +45,22 @@ namespace GYM_MILESTONETHREE.Controllers
             {
                 return BadRequest(ex.Message);
             }
+
         }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult>deleteEnrollmentasync(Guid id)
+        {
+            try 
+            {
+                var data= await _enrollementService.deleteEnrollmentasync(id);
+                return Ok(data);
+            }
+            catch (Exception ex) 
+            {
+                return BadRequest(ex.Message);
+            }
+          }
 
 
 

@@ -34,10 +34,41 @@ namespace GYM_MILESTONETHREE.Service
             {
                 return false;
             }
-            
-           
           
         }
+        public async Task<Notification> markAsReadAsync(Guid notificationid)
+        {
+            var data = await _notificationRepository.getNotificationByIdAsync(notificationid);
+            if (data!=null)
+            {
+                data.isRead = true;
+                var response = await _notificationRepository.updateNotification(data);
+                return response;
+            }
+            else
+            {
+                throw new Exception("Notification Not Found");
+            }
+
+
+        }
+
+        public async Task<Notification> removeNotificationAsync(Guid notificationid)
+        {
+
+            var data =await _notificationRepository.getNotificationByIdAsync(notificationid);
+            if (data != null)
+            {
+                data.status = false;
+                var response = await _notificationRepository.updateNotification(data);
+                return response;
+            }
+            else
+            {
+                throw new Exception("Notification Not Found");
+            }
+        }
+        
 
     }
 }

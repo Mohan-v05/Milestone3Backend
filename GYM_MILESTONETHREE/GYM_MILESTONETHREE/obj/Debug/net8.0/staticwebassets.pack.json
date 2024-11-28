@@ -1,31 +1,35 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\UT01146\\Desktop\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\LoginImage.jpg",
+      "Id": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\IMG_20210311_175911.jpg",
+      "PackagePath": "staticwebassets\\images\\IMG_20210311_175911.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\LoginImage.jpg",
       "PackagePath": "staticwebassets\\images\\LoginImage.jpg"
     },
     {
-      "Id": "C:\\Users\\UT01146\\Desktop\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\OIP.jpg",
+      "Id": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\OIP.jpg",
       "PackagePath": "staticwebassets\\images\\OIP.jpg"
     },
     {
-      "Id": "C:\\Users\\UT01146\\Desktop\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\UnicoM.png",
+      "Id": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\UnicoM.png",
       "PackagePath": "staticwebassets\\images\\UnicoM.png"
     },
     {
-      "Id": "C:\\Users\\UT01146\\Desktop\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\chestpress.jpg",
+      "Id": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\chestpress.jpg",
       "PackagePath": "staticwebassets\\images\\chestpress.jpg"
     },
     {
-      "Id": "C:\\Users\\UT01146\\Desktop\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\dumbbell-front-raise.png",
+      "Id": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\dumbbell-front-raise.png",
       "PackagePath": "staticwebassets\\images\\dumbbell-front-raise.png"
     },
     {
-      "Id": "C:\\Users\\UT01146\\Desktop\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\pullups.jpg",
+      "Id": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\pullups.jpg",
       "PackagePath": "staticwebassets\\images\\pullups.jpg"
     },
     {
-      "Id": "C:\\Users\\UT01146\\Desktop\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\yoga.jpg",
+      "Id": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\wwwroot\\images\\yoga.jpg",
       "PackagePath": "staticwebassets\\images\\yoga.jpg"
     },
     {

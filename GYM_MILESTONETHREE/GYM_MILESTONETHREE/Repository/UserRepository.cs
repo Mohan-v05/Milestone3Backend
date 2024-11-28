@@ -39,8 +39,8 @@ namespace GYM_MILESTONETHREE.Repository
     
         public async Task<Users> GetUserByIdAsync(int userId)
         {
-            
-            var user = await _context.users.Include(u => u.Address).FirstOrDefaultAsync(u=>u.Id==userId);
+
+            var user = await _context.users.Include(u => u.Address).Include(u=>u.Notification).Include(u => u.Enrollment).ThenInclude(e => e.GymProgram).FirstOrDefaultAsync(u => u.Id == userId);
 
             
             if (user == null)
@@ -92,7 +92,7 @@ namespace GYM_MILESTONETHREE.Repository
                 }
                 if (usersToDeactivate.Count > 0)
             {
-                _context.UpdateRange(usersToDeactivate);
+                _context.users.UpdateRange(usersToDeactivate);
                 await _context.SaveChangesAsync();
                 return usersToDeactivate;
             }
@@ -104,7 +104,7 @@ namespace GYM_MILESTONETHREE.Repository
         }
         public async Task<Users> DeleteUserByIdAsync(Users user)
         {
-             _context.Update(user);
+             _context.users.Remove(user);
             await _context.SaveChangesAsync();
             return user;
         }

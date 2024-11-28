@@ -76,5 +76,16 @@ namespace GYM_MILESTONETHREE.Service
             return programs;
         }
 
+        public async Task<Enrollments> deleteEnrollmentasync(Guid id)
+        {
+            var data = await _enrollmentRepository.getEnrollmentsById(id);
+            if (data != null)
+            {
+
+                var res = await _enrollmentRepository.deleteEnrollmentasync(data);
+                return res;
+            }
+            throw new Exception("enrollment not found");
+             }
+        }
     }
-}

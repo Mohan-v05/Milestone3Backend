@@ -2,6 +2,7 @@
 using GYM_MILESTONETHREE.IRepository;
 using GYM_MILESTONETHREE.Models;
 using Microsoft.EntityFrameworkCore;
+using System.Runtime.InteropServices;
 
 namespace GYM_MILESTONETHREE.Repository
 {
@@ -89,5 +90,19 @@ namespace GYM_MILESTONETHREE.Repository
                 throw new ApplicationException($"An error occurd while Getting programs {programId}.", ex);
             }
         }
+
+        public async Task<Enrollments> getEnrollmentsById(Guid id)
+        {
+            var data = await _context.enrollments.FindAsync(id);
+            return data;
+        }
+        public async Task<Enrollments> deleteEnrollmentasync(Enrollments enrollment)
+        {
+            var data = _context.enrollments.Remove(enrollment);
+                await _context.SaveChangesAsync();
+            return data.Entity;
+        }
+
     }
+
 }

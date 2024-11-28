@@ -42,14 +42,7 @@ namespace GYM_MILESTONETHREE
 
             builder.Services.AddScoped<INotificationRepository,NoticationRepository>();
             builder.Services.AddScoped<INotificationService,NotificationService>();
-
-            // Register the PaymentNotificationService in DI container
-          //  builder.Services.AddScoped<PaymentNotificationService>();
-
-            // Register other services like IEmailSender, ILogger, etc.
-            builder.Services.AddScoped<IEmailSender, EmailSender>(); // Assuming EmailSender implements IEmailSender
-                                                                     //   builder.Services.AddScoped<ILogger<PaymentNotificationService>, Logger<PaymentNotificationService>>();
-
+          
             var jwtsetting = builder.Configuration.GetSection("Jwt");
             var key = Encoding.ASCII.GetBytes(jwtsetting["Key"]!);
 
@@ -74,9 +67,9 @@ namespace GYM_MILESTONETHREE
             {
                 options.AddPolicy(name: policyName, builder =>
                 {
-                    builder.WithOrigins("*")   // Allow all origins
-                        .AllowAnyHeader()      // Allow all headers
-                        .AllowAnyMethod();     // Allow all methods
+                    builder.WithOrigins("*")   
+                        .AllowAnyHeader()     
+                        .AllowAnyMethod();     
                 });
             });
 
@@ -91,7 +84,7 @@ namespace GYM_MILESTONETHREE
             var app = builder.Build();
 
 
-            // Configure the HTTP request pipeline.
+            
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();

@@ -20,6 +20,6 @@ namespace GYM_MILESTONETHREE.IService
 
         Task<List<Users>> SoftDeleteExpiredUsersAsync();
 
-        Task<Users> DeleteUserByIdAsync(int userId);
+        Task<Users> DeleteUserByIdAsync(int userId,bool permanent);
     }
 }

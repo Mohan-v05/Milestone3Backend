@@ -141,14 +141,20 @@ namespace GYM_MILESTONETHREE.Service
             return await _repository.GetActiveUsersAsync();
         }
 
-        public async Task<Users> DeleteUserByIdAsync(int UserId)
+        public async Task<Users> DeleteUserByIdAsync(int UserId , bool permanent)
         {
             var data = await _repository.GetUserByIdAsync(UserId);
-            data.IsActivated = false;
+           
             if (data != null)
-            {
-                return await _repository.DeleteUserByIdAsync(data);
-            }
+                if (permanent)
+                {
+                    return await _repository.DeleteUserByIdAsync(data);
+                }
+            else
+                {
+                data.IsActivated = false;
+               return await _repository.updateUser(data);
+                 }
             else
             {
                 throw new Exception($"Unable to Find User with Id: {UserId}");

@@ -1,6 +1,8 @@
 ﻿namespace GYM_MILESTONETHREE.Enums
 {
-    public class Gender
+    public enum Gender
     {
+      Mal = 1 ,
+        Female = 2
     }
 }

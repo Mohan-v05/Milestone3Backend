@@ -161,6 +161,21 @@ namespace GYM_MILESTONETHREE.Service
 
             }
         }
+        public async Task<Users> updateUserAsync(UpdateUser updateUser)
+        {
+           var newUserData= new Users();
+            newUserData.Name = updateUser.Name;
+            newUserData.Email = updateUser.Email;
+            newUserData.Role = updateUser.Role;
+            newUserData.Nicnumber = updateUser.Nicnumber;
+            newUserData.Address = updateUser.Address;
+            newUserData.Gender = updateUser.Gender;
+            newUserData.PasswordHashed = BCrypt.Net.BCrypt.HashPassword(updateUser.newPassword);
+     
+
+        var updatedUser=await _repository.updateUser(newUserData);
+            return updatedUser;
+        }
 
     }
 }

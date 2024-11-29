@@ -111,6 +111,20 @@ namespace GYM_MILESTONETHREE.Controllers
             }
         }
 
+        [HttpPut]
+        public async Task<IActionResult> updateUserAsync(UpdateUser updateDetails)
+        {
+            try
+            {
+                var updatedUser = await _userService.updateUserAsync(updateDetails);
+                return Ok(updatedUser);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
+        }
 
 
 

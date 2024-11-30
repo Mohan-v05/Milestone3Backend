@@ -1,225 +1,225 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\",
+  "WorkspaceRootPath": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\iservice\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\iservice\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\controllers\\gymprogramscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\controllers\\gymprogramscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\requestmodels\\updateuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\requestmodels\\updateuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\irepository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\irepository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\requestmodels\\changepasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\requestmodels\\changepasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\service\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\service\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\service\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\service\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\service\\enrollementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\service\\enrollementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\repository\\gymprogramsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\repository\\gymprogramsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\models\\gymprograms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\models\\gymprograms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\models\\gymprograms.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\service\\gymprogramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\service\\gymprogramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\iservice\\igymprogramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\iservice\\igymprogramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\responsemodels\\gymprogramsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\responsemodels\\gymprogramsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\iservice\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\iservice\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\responsemodels\\enrollementresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\responsemodels\\enrollementresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\requestmodels\\updatepasswordreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\requestmodels\\updatepasswordreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\repository\\enrollmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\repository\\enrollmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\requestmodels\\updateuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\requestmodels\\updateuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\database\\appdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\database\\appdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\migrations\\20241128082006_ennavalka.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\requestmodels\\changepasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\requestmodels\\changepasswordrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\migrations\\20241128082006_ennavalka.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\migrations\\20241128082006_ennavalka.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\models\\payments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\models\\payments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\migrations\\20241130043112_initial2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\migrations\\20241130043112_initial2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128070800_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GYM_MILESTONETHREE\\Migrations\\20241128070800_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\database\\appdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\database\\appdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128070607_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GYM_MILESTONETHREE\\Migrations\\20241128070607_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\migrations\\20241128071156_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\migrations\\20241128071156_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128070510_paymentupdated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GYM_MILESTONETHREE\\Migrations\\20241128070510_paymentupdated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128070221_Pyment-member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GYM_MILESTONETHREE\\Migrations\\20241128070221_Pyment-member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128065739_45444.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GYM_MILESTONETHREE\\Migrations\\20241128065739_45444.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\enums\\paymenttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\enums\\paymenttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\enums\\paymenttype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128065331_78945.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GYM_MILESTONETHREE\\Migrations\\20241128065331_78945.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128065128_87877.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GYM_MILESTONETHREE\\Migrations\\20241128065128_87877.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128064957_paymetpayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GYM_MILESTONETHREE\\Migrations\\20241128064957_paymetpayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\repository\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\repository\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\irepository\\inotificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\irepository\\inotificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\controllers\\enrollementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\controllers\\enrollementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\irepository\\ienrollmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\irepository\\ienrollmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\iservice\\ienrollementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\iservice\\ienrollementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\repository\\noticationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\repository\\noticationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\iservice\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\iservice\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\enums\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\enums\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\enums\\membershiptype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\enums\\membershiptype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\enums\\membershiptype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\responsemodels\\paymentresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\irepository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\irepository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\service\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\service\\paymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\service\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\service\\notificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\service\\enrollementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\service\\enrollementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\repository\\gymprogramsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\repository\\gymprogramsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\service\\gymprogramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\service\\gymprogramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\iservice\\igymprogramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\iservice\\igymprogramservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\responsemodels\\gymprogramsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\responsemodels\\gymprogramsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\responsemodels\\enrollementresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\responsemodels\\enrollementresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\repository\\enrollmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\repository\\enrollmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\models\\payments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\models\\payments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128070800_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128070607_payment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128070510_paymentupdated.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128070221_Pyment-member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128065739_45444.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128065331_78945.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128065128_87877.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128064957_paymetpayer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\repository\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\repository\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\irepository\\inotificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\irepository\\inotificationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\controllers\\enrollementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\controllers\\enrollementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\irepository\\ienrollmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\irepository\\ienrollmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\iservice\\ienrollementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\iservice\\ienrollementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\repository\\noticationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\repository\\noticationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\iservice\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\iservice\\inotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\enums\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\enums\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\responsemodels\\paymentresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\responsemodels\\paymentresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\enums\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\enums\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\enums\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\requestmodels\\adduserreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\requestmodels\\adduserreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\requestmodels\\adduserreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|X:\\Milestonethree\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241122070016_podank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\requestmodels\\paymentsreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\requestmodels\\paymentsreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\requestmodels\\paymentsreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\iservice\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\iservice\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\iservice\\ipaymentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\requestmodels\\newenrollementsreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\requestmodels\\newenrollementsreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\requestmodels\\newenrollementsreq.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\controllers\\gymprogramscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\controllers\\gymprogramscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\requestmodels\\notificationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\requestmodels\\notificationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\requestmodels\\notificationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\irepository\\igymprogramrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|x:\\gym_management\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\irepository\\igymprogramrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\irepository\\igymprogramrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\ms-3\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\migrations\\20241128071156_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\migrations\\20241128071156_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -229,106 +229,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UpdateUser.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\RequestModels\\UpdateUser.cs",
-              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\RequestModels\\UpdateUser.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\RequestModels\\UpdateUser.cs",
-              "RelativeToolTip": "GYM_MILESTONETHREE\\RequestModels\\UpdateUser.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAATAAAA",
+              "DocumentIndex": 13,
+              "Title": "PaymentType.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Enums\\PaymentType.cs",
+              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Enums\\PaymentType.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Enums\\PaymentType.cs",
+              "RelativeToolTip": "GYM_MILESTONETHREE\\Enums\\PaymentType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T13:47:19.483Z",
+              "WhenOpened": "2024-11-19T04:41:18.13Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Repository\\UserRepository.cs",
-              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Repository\\UserRepository.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Repository\\UserRepository.cs",
-              "RelativeToolTip": "GYM_MILESTONETHREE\\Repository\\UserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T05:03:33.435Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Controllers\\UserController.cs",
-              "RelativeToolTip": "GYM_MILESTONETHREE\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAGoAAAAAAAAAAAAhwHYAAABEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T05:03:54.252Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\IRepository\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\IRepository\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\IRepository\\IUserRepository.cs",
-              "RelativeToolTip": "GYM_MILESTONETHREE\\IRepository\\IUserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T10:22:12.143Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Service\\UserService.cs",
-              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Service\\UserService.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Service\\UserService.cs",
-              "RelativeToolTip": "GYM_MILESTONETHREE\\Service\\UserService.cs",
-              "ViewState": "AQIAAJkAAAAAAAAAAAAIwKsAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T10:23:11.284Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IUserService.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\IService\\IUserService.cs",
-              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\IService\\IUserService.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\IService\\IUserService.cs",
-              "RelativeToolTip": "GYM_MILESTONETHREE\\IService\\IUserService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T10:23:05.518Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Users.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Models\\Users.cs",
-              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Models\\Users.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Models\\Users.cs",
-              "RelativeToolTip": "GYM_MILESTONETHREE\\Models\\Users.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAowCMAAAAxAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T05:06:22.019Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ChangePasswordRequest.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\RequestModels\\ChangePasswordRequest.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\RequestModels\\ChangePasswordRequest.cs",
               "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\RequestModels\\ChangePasswordRequest.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\RequestModels\\ChangePasswordRequest.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\RequestModels\\ChangePasswordRequest.cs",
               "RelativeToolTip": "GYM_MILESTONETHREE\\RequestModels\\ChangePasswordRequest.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -337,62 +259,240 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "EnrollementService.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Service\\EnrollementService.cs",
-              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Service\\EnrollementService.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Service\\EnrollementService.cs",
-              "RelativeToolTip": "GYM_MILESTONETHREE\\Service\\EnrollementService.cs",
-              "ViewState": "AQIAAEMAAAAAAAAAAAASwFoAAAABAAAA",
+              "DocumentIndex": 7,
+              "Title": "Users.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Models\\Users.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Models\\Users.cs",
+              "RelativeToolTip": "GYM_MILESTONETHREE\\Models\\Users.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAowCMAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T05:23:36.234Z",
+              "WhenOpened": "2024-11-19T05:06:22.019Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "AppDb.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\DataBase\\AppDb.cs",
-              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\DataBase\\AppDb.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\DataBase\\AppDb.cs",
-              "RelativeToolTip": "GYM_MILESTONETHREE\\DataBase\\AppDb.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAAAC0AAAAxAAAA",
+              "DocumentIndex": 6,
+              "Title": "UpdateUser.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\RequestModels\\UpdateUser.cs",
+              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\RequestModels\\UpdateUser.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\RequestModels\\UpdateUser.cs",
+              "RelativeToolTip": "GYM_MILESTONETHREE\\RequestModels\\UpdateUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T08:13:16.303Z"
+              "WhenOpened": "2024-11-29T13:47:19.483Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "NotificationService.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Service\\NotificationService.cs",
-              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Service\\NotificationService.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Service\\NotificationService.cs",
-              "RelativeToolTip": "GYM_MILESTONETHREE\\Service\\NotificationService.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAABcAAAA2AAAA",
+              "Title": "20241128082006_ennavalka.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128082006_ennavalka.cs",
+              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Migrations\\20241128082006_ennavalka.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128082006_ennavalka.cs",
+              "RelativeToolTip": "GYM_MILESTONETHREE\\Migrations\\20241128082006_ennavalka.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwCEAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T08:17:44.717Z",
+              "WhenOpened": "2024-11-28T08:20:07.014Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PaymentService.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Service\\PaymentService.cs",
-              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Service\\PaymentService.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Service\\PaymentService.cs",
-              "RelativeToolTip": "GYM_MILESTONETHREE\\Service\\PaymentService.cs",
-              "ViewState": "AQIAAIwAAAAAAAAAAAAewKYAAAAAAAAA",
+              "DocumentIndex": 11,
+              "Title": "AppDb.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\DataBase\\AppDb.cs",
+              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\DataBase\\AppDb.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\DataBase\\AppDb.cs",
+              "RelativeToolTip": "GYM_MILESTONETHREE\\DataBase\\AppDb.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAwDQAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T05:04:53.766Z",
+              "WhenOpened": "2024-11-19T08:13:16.303Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GymProgramsController.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Controllers\\GymProgramsController.cs",
+              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Controllers\\GymProgramsController.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Controllers\\GymProgramsController.cs",
+              "RelativeToolTip": "GYM_MILESTONETHREE\\Controllers\\GymProgramsController.cs",
+              "ViewState": "AQIAAG4AAAAAAAAAAAAcwHoAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T04:17:21.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Membershiptype.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Enums\\Membershiptype.cs",
+              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Enums\\Membershiptype.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Enums\\Membershiptype.cs",
+              "RelativeToolTip": "GYM_MILESTONETHREE\\Enums\\Membershiptype.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T04:41:17.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\IRepository\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\IRepository\\IUserRepository.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\IRepository\\IUserRepository.cs",
+              "RelativeToolTip": "GYM_MILESTONETHREE\\IRepository\\IUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T10:22:12.143Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Service\\UserService.cs",
+              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Service\\UserService.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Service\\UserService.cs",
+              "RelativeToolTip": "GYM_MILESTONETHREE\\Service\\UserService.cs",
+              "ViewState": "AQIAAKwAAAAAAAAAAAAgwMsAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T10:23:11.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\IService\\IUserService.cs",
+              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\IService\\IUserService.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\IService\\IUserService.cs",
+              "RelativeToolTip": "GYM_MILESTONETHREE\\IService\\IUserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T10:23:05.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GymPrograms.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Models\\GymPrograms.cs",
+              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Models\\GymPrograms.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Models\\GymPrograms.cs",
+              "RelativeToolTip": "GYM_MILESTONETHREE\\Models\\GymPrograms.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T10:17:11.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Controllers\\UserController.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Controllers\\UserController.cs",
+              "RelativeToolTip": "GYM_MILESTONETHREE\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAHMAAAAAAAAAAAAYwIgAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T05:03:54.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UpdatePasswordReq.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\RequestModels\\UpdatePasswordReq.cs",
+              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\RequestModels\\UpdatePasswordReq.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\RequestModels\\UpdatePasswordReq.cs",
+              "RelativeToolTip": "GYM_MILESTONETHREE\\RequestModels\\UpdatePasswordReq.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T06:23:25.032Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20241128071156_initial.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128071156_initial.cs",
+              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Migrations\\20241128071156_initial.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128071156_initial.cs",
+              "RelativeToolTip": "GYM_MILESTONETHREE\\Migrations\\20241128071156_initial.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T07:11:56.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "EnrollementService.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Service\\EnrollementService.cs",
+              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Service\\EnrollementService.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Service\\EnrollementService.cs",
+              "RelativeToolTip": "GYM_MILESTONETHREE\\Service\\EnrollementService.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAASwFoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T05:23:36.234Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20241130043112_initial2.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241130043112_initial2.cs",
+              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Migrations\\20241130043112_initial2.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241130043112_initial2.cs",
+              "RelativeToolTip": "GYM_MILESTONETHREE\\Migrations\\20241130043112_initial2.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAA1wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T04:31:12.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Repository\\UserRepository.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "GYM_MILESTONETHREE\\Repository\\UserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T05:03:33.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "NotificationService.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Service\\NotificationService.cs",
+              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Service\\NotificationService.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Service\\NotificationService.cs",
+              "RelativeToolTip": "GYM_MILESTONETHREE\\Service\\NotificationService.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABcAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T08:17:44.717Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 17,
+              "Title": "PaymentService.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Service\\PaymentService.cs",
+              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Service\\PaymentService.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Service\\PaymentService.cs",
+              "RelativeToolTip": "GYM_MILESTONETHREE\\Service\\PaymentService.cs",
+              "ViewState": "AQIAAIwAAAAAAAAAAAAewKYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T05:04:53.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "EnrollmentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Repository\\EnrollmentRepository.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Repository\\EnrollmentRepository.cs",
               "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Repository\\EnrollmentRepository.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Repository\\EnrollmentRepository.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Repository\\EnrollmentRepository.cs",
               "RelativeToolTip": "GYM_MILESTONETHREE\\Repository\\EnrollmentRepository.cs",
               "ViewState": "AQIAAEkAAAAAAAAAAAAkwGEAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -400,11 +500,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 20,
               "Title": "GymProgramsRepository.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Repository\\GymProgramsRepository.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Repository\\GymProgramsRepository.cs",
               "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Repository\\GymProgramsRepository.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Repository\\GymProgramsRepository.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Repository\\GymProgramsRepository.cs",
               "RelativeToolTip": "GYM_MILESTONETHREE\\Repository\\GymProgramsRepository.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -412,23 +512,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "GymPrograms.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Models\\GymPrograms.cs",
-              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Models\\GymPrograms.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Models\\GymPrograms.cs",
-              "RelativeToolTip": "GYM_MILESTONETHREE\\Models\\GymPrograms.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T10:17:11.803Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 21,
               "Title": "GymProgramService.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Service\\GymProgramService.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Service\\GymProgramService.cs",
               "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Service\\GymProgramService.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Service\\GymProgramService.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Service\\GymProgramService.cs",
               "RelativeToolTip": "GYM_MILESTONETHREE\\Service\\GymProgramService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -436,11 +524,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 22,
               "Title": "IGymProgramService.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\IService\\IGymProgramService.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\IService\\IGymProgramService.cs",
               "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\IService\\IGymProgramService.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\IService\\IGymProgramService.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\IService\\IGymProgramService.cs",
               "RelativeToolTip": "GYM_MILESTONETHREE\\IService\\IGymProgramService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -448,11 +536,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 24,
               "Title": "EnrollementResponse.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\ResponseModels\\EnrollementResponse.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\ResponseModels\\EnrollementResponse.cs",
               "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\ResponseModels\\EnrollementResponse.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\ResponseModels\\EnrollementResponse.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\ResponseModels\\EnrollementResponse.cs",
               "RelativeToolTip": "GYM_MILESTONETHREE\\ResponseModels\\EnrollementResponse.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -460,11 +548,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 23,
               "Title": "Gymprogramsresponse.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\ResponseModels\\Gymprogramsresponse.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\ResponseModels\\Gymprogramsresponse.cs",
               "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\ResponseModels\\Gymprogramsresponse.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\ResponseModels\\Gymprogramsresponse.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\ResponseModels\\Gymprogramsresponse.cs",
               "RelativeToolTip": "GYM_MILESTONETHREE\\ResponseModels\\Gymprogramsresponse.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -472,11 +560,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 26,
               "Title": "Payments.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Models\\Payments.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Models\\Payments.cs",
               "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Models\\Payments.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Models\\Payments.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Models\\Payments.cs",
               "RelativeToolTip": "GYM_MILESTONETHREE\\Models\\Payments.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -484,143 +572,91 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 28,
               "Title": "20241128070607_payment.cs",
               "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128070607_payment.cs",
-              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Migrations\\20241128070607_payment.cs",
               "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128070607_payment.cs",
-              "RelativeToolTip": "GYM_MILESTONETHREE\\Migrations\\20241128070607_payment.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-28T07:06:07.606Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "20241128082006_ennavalka.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128082006_ennavalka.cs",
-              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Migrations\\20241128082006_ennavalka.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128082006_ennavalka.cs",
-              "RelativeToolTip": "GYM_MILESTONETHREE\\Migrations\\20241128082006_ennavalka.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAQwBYAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T08:20:07.014Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "20241128070800_initial.cs",
               "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128070800_initial.cs",
-              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Migrations\\20241128070800_initial.cs",
               "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128070800_initial.cs",
-              "RelativeToolTip": "GYM_MILESTONETHREE\\Migrations\\20241128070800_initial.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-28T07:08:00.702Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
-              "Title": "20241128071156_initial.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128071156_initial.cs",
-              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Migrations\\20241128071156_initial.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128071156_initial.cs",
-              "RelativeToolTip": "GYM_MILESTONETHREE\\Migrations\\20241128071156_initial.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T07:11:56.34Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 29,
               "Title": "20241128070510_paymentupdated.cs",
               "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128070510_paymentupdated.cs",
-              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Migrations\\20241128070510_paymentupdated.cs",
               "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128070510_paymentupdated.cs",
-              "RelativeToolTip": "GYM_MILESTONETHREE\\Migrations\\20241128070510_paymentupdated.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-28T07:05:10.281Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 30,
               "Title": "20241128070221_Pyment-member.cs",
               "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128070221_Pyment-member.cs",
-              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Migrations\\20241128070221_Pyment-member.cs",
               "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128070221_Pyment-member.cs",
-              "RelativeToolTip": "GYM_MILESTONETHREE\\Migrations\\20241128070221_Pyment-member.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAAwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-28T07:02:21.672Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 31,
               "Title": "20241128065739_45444.cs",
               "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128065739_45444.cs",
-              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Migrations\\20241128065739_45444.cs",
               "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128065739_45444.cs",
-              "RelativeToolTip": "GYM_MILESTONETHREE\\Migrations\\20241128065739_45444.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-28T06:57:39.654Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 32,
               "Title": "20241128065331_78945.cs",
               "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128065331_78945.cs",
-              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Migrations\\20241128065331_78945.cs",
               "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128065331_78945.cs",
-              "RelativeToolTip": "GYM_MILESTONETHREE\\Migrations\\20241128065331_78945.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAAAAwCIAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-28T06:53:31.217Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "PaymentType.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Enums\\PaymentType.cs",
-              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Enums\\PaymentType.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Enums\\PaymentType.cs",
-              "RelativeToolTip": "GYM_MILESTONETHREE\\Enums\\PaymentType.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T04:41:18.13Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 33,
               "Title": "20241128065128_87877.cs",
               "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128065128_87877.cs",
-              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Migrations\\20241128065128_87877.cs",
               "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128065128_87877.cs",
-              "RelativeToolTip": "GYM_MILESTONETHREE\\Migrations\\20241128065128_87877.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-28T06:51:28.398Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 34,
               "Title": "20241128064957_paymetpayer.cs",
               "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128064957_paymetpayer.cs",
-              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Migrations\\20241128064957_paymetpayer.cs",
               "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241128064957_paymetpayer.cs",
-              "RelativeToolTip": "GYM_MILESTONETHREE\\Migrations\\20241128064957_paymetpayer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-28T06:49:57.518Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 35,
               "Title": "PaymentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Repository\\PaymentRepository.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Repository\\PaymentRepository.cs",
               "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Repository\\PaymentRepository.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Repository\\PaymentRepository.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Repository\\PaymentRepository.cs",
               "RelativeToolTip": "GYM_MILESTONETHREE\\Repository\\PaymentRepository.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAAAAAB0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -628,11 +664,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 41,
               "Title": "IEnrollementService.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\IService\\IEnrollementService.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\IService\\IEnrollementService.cs",
               "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\IService\\IEnrollementService.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\IService\\IEnrollementService.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\IService\\IEnrollementService.cs",
               "RelativeToolTip": "GYM_MILESTONETHREE\\IService\\IEnrollementService.cs",
               "ViewState": "AQIAAAIAAAAAAAAAAAAAAAsAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -640,11 +676,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 38,
               "Title": "Notification.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Models\\Notification.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Models\\Notification.cs",
               "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Models\\Notification.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Models\\Notification.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Models\\Notification.cs",
               "RelativeToolTip": "GYM_MILESTONETHREE\\Models\\Notification.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -652,11 +688,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 36,
               "Title": "NotificationController.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Controllers\\NotificationController.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Controllers\\NotificationController.cs",
               "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Controllers\\NotificationController.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Controllers\\NotificationController.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Controllers\\NotificationController.cs",
               "RelativeToolTip": "GYM_MILESTONETHREE\\Controllers\\NotificationController.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAAwBMAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -664,11 +700,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 39,
               "Title": "EnrollementController.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Controllers\\EnrollementController.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Controllers\\EnrollementController.cs",
               "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Controllers\\EnrollementController.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Controllers\\EnrollementController.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Controllers\\EnrollementController.cs",
               "RelativeToolTip": "GYM_MILESTONETHREE\\Controllers\\EnrollementController.cs",
               "ViewState": "AQIAABMAAAAAAAAAAAAawEMAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -676,11 +712,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 37,
               "Title": "INotificationRepository.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\IRepository\\INotificationRepository.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\IRepository\\INotificationRepository.cs",
               "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\IRepository\\INotificationRepository.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\IRepository\\INotificationRepository.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\IRepository\\INotificationRepository.cs",
               "RelativeToolTip": "GYM_MILESTONETHREE\\IRepository\\INotificationRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -688,11 +724,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 40,
               "Title": "IEnrollmentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\IRepository\\IEnrollmentRepository.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\IRepository\\IEnrollmentRepository.cs",
               "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\IRepository\\IEnrollmentRepository.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\IRepository\\IEnrollmentRepository.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\IRepository\\IEnrollmentRepository.cs",
               "RelativeToolTip": "GYM_MILESTONETHREE\\IRepository\\IEnrollmentRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -700,11 +736,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 42,
               "Title": "NoticationRepository.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Repository\\NoticationRepository.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Repository\\NoticationRepository.cs",
               "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Repository\\NoticationRepository.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Repository\\NoticationRepository.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Repository\\NoticationRepository.cs",
               "RelativeToolTip": "GYM_MILESTONETHREE\\Repository\\NoticationRepository.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAzwBwAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -712,11 +748,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 43,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Program.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Program.cs",
               "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Program.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Program.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Program.cs",
               "RelativeToolTip": "GYM_MILESTONETHREE\\Program.cs",
               "ViewState": "AQIAAD8AAAAAAAAAAAAhwFYAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -724,11 +760,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 44,
               "Title": "INotificationService.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\IService\\INotificationService.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\IService\\INotificationService.cs",
               "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\IService\\INotificationService.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\IService\\INotificationService.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\IService\\INotificationService.cs",
               "RelativeToolTip": "GYM_MILESTONETHREE\\IService\\INotificationService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAuwA0AAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -736,23 +772,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "Membershiptype.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Enums\\Membershiptype.cs",
-              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Enums\\Membershiptype.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Enums\\Membershiptype.cs",
-              "RelativeToolTip": "GYM_MILESTONETHREE\\Enums\\Membershiptype.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T04:41:17.589Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 45,
               "Title": "Gender.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Enums\\Gender.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Enums\\Gender.cs",
               "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Enums\\Gender.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Enums\\Gender.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Enums\\Gender.cs",
               "RelativeToolTip": "GYM_MILESTONETHREE\\Enums\\Gender.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -760,11 +784,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 47,
               "Title": "Role.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Enums\\Role.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Enums\\Role.cs",
               "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Enums\\Role.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Enums\\Role.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Enums\\Role.cs",
               "RelativeToolTip": "GYM_MILESTONETHREE\\Enums\\Role.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -772,11 +796,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 46,
               "Title": "PaymentResponse.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\ResponseModels\\PaymentResponse.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\ResponseModels\\PaymentResponse.cs",
               "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\ResponseModels\\PaymentResponse.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\ResponseModels\\PaymentResponse.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\ResponseModels\\PaymentResponse.cs",
               "RelativeToolTip": "GYM_MILESTONETHREE\\ResponseModels\\PaymentResponse.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -784,11 +808,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 48,
               "Title": "AddUserReq.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\RequestModels\\AddUserReq.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\RequestModels\\AddUserReq.cs",
               "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\RequestModels\\AddUserReq.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\RequestModels\\AddUserReq.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\RequestModels\\AddUserReq.cs",
               "RelativeToolTip": "GYM_MILESTONETHREE\\RequestModels\\AddUserReq.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAqwBkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -796,11 +820,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 49,
               "Title": "PaymentController.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Controllers\\PaymentController.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Controllers\\PaymentController.cs",
               "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Controllers\\PaymentController.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Controllers\\PaymentController.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Controllers\\PaymentController.cs",
               "RelativeToolTip": "GYM_MILESTONETHREE\\Controllers\\PaymentController.cs",
               "ViewState": "AQIAABMAAAAAAAAAAAAgwCMAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -808,11 +832,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 51,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\appsettings.json",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\appsettings.json",
               "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\appsettings.json",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\appsettings.json",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\appsettings.json",
               "RelativeToolTip": "GYM_MILESTONETHREE\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -820,21 +844,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 50,
               "Title": "20241122070016_podank.cs",
               "DocumentMoniker": "X:\\Milestonethree\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241122070016_podank.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Milestonethree\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241122070016_podank.cs",
               "ToolTip": "X:\\Milestonethree\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241122070016_podank.cs",
+              "RelativeToolTip": "..\\..\\..\\Milestonethree\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241122070016_podank.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-22T07:00:16.427Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 52,
               "Title": "PaymentsReq.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\RequestModels\\PaymentsReq.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\RequestModels\\PaymentsReq.cs",
               "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\RequestModels\\PaymentsReq.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\RequestModels\\PaymentsReq.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\RequestModels\\PaymentsReq.cs",
               "RelativeToolTip": "GYM_MILESTONETHREE\\RequestModels\\PaymentsReq.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -842,11 +868,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 53,
               "Title": "IPaymentService.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\IService\\IPaymentService.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\IService\\IPaymentService.cs",
               "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\IService\\IPaymentService.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\IService\\IPaymentService.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\IService\\IPaymentService.cs",
               "RelativeToolTip": "GYM_MILESTONETHREE\\IService\\IPaymentService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -854,11 +880,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 54,
               "Title": "NewEnrollementsReq.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\RequestModels\\NewEnrollementsReq.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\RequestModels\\NewEnrollementsReq.cs",
               "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\RequestModels\\NewEnrollementsReq.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\RequestModels\\NewEnrollementsReq.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\RequestModels\\NewEnrollementsReq.cs",
               "RelativeToolTip": "GYM_MILESTONETHREE\\RequestModels\\NewEnrollementsReq.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -866,23 +892,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "GymProgramsController.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Controllers\\GymProgramsController.cs",
-              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Controllers\\GymProgramsController.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Controllers\\GymProgramsController.cs",
-              "RelativeToolTip": "GYM_MILESTONETHREE\\Controllers\\GymProgramsController.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAowEoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T04:17:21.048Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 55,
               "Title": "Notificationrequest.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\RequestModels\\Notificationrequest.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\RequestModels\\Notificationrequest.cs",
               "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\RequestModels\\Notificationrequest.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\RequestModels\\Notificationrequest.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\RequestModels\\Notificationrequest.cs",
               "RelativeToolTip": "GYM_MILESTONETHREE\\RequestModels\\Notificationrequest.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -890,11 +904,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 56,
               "Title": "IGymProgramRepository.cs",
-              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\IRepository\\IGymProgramRepository.cs",
+              "DocumentMoniker": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\IRepository\\IGymProgramRepository.cs",
               "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\IRepository\\IGymProgramRepository.cs",
-              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\MS-3\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\IRepository\\IGymProgramRepository.cs",
+              "ToolTip": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\IRepository\\IGymProgramRepository.cs",
               "RelativeToolTip": "GYM_MILESTONETHREE\\IRepository\\IGymProgramRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

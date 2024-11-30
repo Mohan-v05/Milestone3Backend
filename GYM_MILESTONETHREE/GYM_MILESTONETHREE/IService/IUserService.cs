@@ -18,10 +18,12 @@ namespace GYM_MILESTONETHREE.IService
 
         Task<List<Users>> GetActiveUsersAsync();
 
-        Task<Users> updateUserAsync(UpdateUser updateUser);
+        Task<Users> updateUserAsync(int UserId,UpdateUser updateUser);
 
         Task<List<Users>> SoftDeleteExpiredUsersAsync();
 
         Task<Users> DeleteUserByIdAsync(int userId,bool permanent);
+
+        Task<Users> updatePassword(UpdatePasswordReq updateUser);
     }
 }

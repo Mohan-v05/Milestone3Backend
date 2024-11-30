@@ -24,7 +24,7 @@ namespace GYM_MILESTONETHREE.Controllers
         private readonly AppDb _context;
         private readonly  IGymProgramService _service;
         private readonly string _imageFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images");
-        //private readonly string _imageFolder= @"X:\GymProjectFinal\Milestone3FrontEnd\y\public";
+       
         
         public GymProgramsController(AppDb context,IGymProgramService service)
         {
@@ -62,9 +62,8 @@ namespace GYM_MILESTONETHREE.Controllers
                 Category = request.Category,
                 Fees = request.Fees,
                 ImagePath = $"http://localhost:5159/images/{fileName}"
-               // C:\Users\UT01146\Desktop\11 - 12\Milestone3Backend\GYM_MILESTONETHREE\GYM_MILESTONETHREE\wwwroot\images\yoga.jpg
+              
             };
-
 
             _context.gymprograms.Add(gymProgram);
             await _context.SaveChangesAsync();
@@ -92,7 +91,7 @@ namespace GYM_MILESTONETHREE.Controllers
 
 
         // GET: api/GymPrograms/5
-        [HttpGet("get-by-id{id}")]
+        [HttpGet("{id}")]
         public async Task<ActionResult<GymPrograms>> GetGymProgramsbyIdAsync(int id)
         {
             var gymProgram = await _service.GetGymProgramsbyIdAsync(id);
@@ -108,69 +107,39 @@ namespace GYM_MILESTONETHREE.Controllers
         // PUT: api/GymPrograms/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutGymPrograms(int id, GymPrograms gymPrograms)
+        public async Task<IActionResult> PutGymPrograms(int id, createProgramReq request)
         {
-            if (id != gymPrograms.Id)
+
+            if (request.image == null || request.image.Length == 0)
             {
-                return BadRequest();
+                return BadRequest("No image uploaded.");
+            }
+            // Save the image to the wwwroot/images folder
+            var fileName = Path.GetFileName(request.image.FileName);
+            var filePath = Path.Combine(_imageFolder, fileName);
+
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await request.image.CopyToAsync(stream);
             }
 
-            _context.Entry(gymPrograms).State = EntityState.Modified;
-
-            try
+            var oldPrograminfo = await _context.gymprograms.FindAsync(id);
+            if (oldPrograminfo!=null)
             {
+                oldPrograminfo.Name = request.Name;
+                oldPrograminfo.Description = request.Description;
+                oldPrograminfo.Category = request.Category;
+                oldPrograminfo.Fees = request.Fees;
+                oldPrograminfo.ImagePath = $"http://localhost:5159/images/{fileName}";
+
+                _context.gymprograms.Update(oldPrograminfo);
                 await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!GymProgramsExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
 
+                return Ok(oldPrograminfo);
+            }
             return NoContent();
+
         }
-
-        // POST: api/GymPrograms
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        //[HttpPost("Addgym programs only")]
-        //public async Task<ActionResult<GymPrograms>> PostGymPrograms(createProgramReq programReq)
-        //{  
-        //    var gymPrograms=new GymPrograms();
-            
-        //    gymPrograms.Name = programReq.Name;
-        //    gymPrograms.Description = programReq.Description;
-        //    gymPrograms.Category= programReq.Category;
-        //    gymPrograms.Fees  = programReq.Fees;
-          
-        //  await   _context.gymprograms.AddAsync(gymPrograms);
-
-            
-          
-
-        //    return CreatedAtAction("GetGymPrograms", new { id = gymPrograms.Id }, gymPrograms);
-        //}
-        
-
-
-        // GET: api/Product/{id}
-        //[HttpGet("{id}")]
-        //public async Task<ActionResult<GymPrograms>> GetGymProgramById(int id)
-        //{
-        //    var gymProgram = await _context.gymprograms.FindAsync(id);
-
-        //    if (gymProgram == null)
-        //    {
-        //        return NotFound();
-        //    }
-
-        //    return Ok(gymProgram);
-        //}
 
 
         // DELETE: api/GymPrograms/id

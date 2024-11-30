@@ -5,8 +5,6 @@ namespace GYM_MILESTONETHREE.RequestModels
 {
     public class UpdateUser
     { 
-
-      
         public string? Name { get; set; }
 
         public string? Email { get; set; }
@@ -19,7 +17,6 @@ namespace GYM_MILESTONETHREE.RequestModels
 
         public string? Gender { get; set; }
 
-        public string? newPassword { get; set; }
       
     }
 }

@@ -10,7 +10,9 @@ using GYM_MILESTONETHREE.ResponseModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Migrations.Operations;
 using Microsoft.IdentityModel.Tokens;
+using Org.BouncyCastle.Crypto.Generators;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -161,20 +163,52 @@ namespace GYM_MILESTONETHREE.Service
 
             }
         }
-        public async Task<Users> updateUserAsync(UpdateUser updateUser)
+        public async Task<Users> updateUserAsync(int userId, UpdateUser updateUserdata)
         {
-           var newUserData= new Users();
-            newUserData.Name = updateUser.Name;
-            newUserData.Email = updateUser.Email;
-            newUserData.Role = updateUser.Role;
-            newUserData.Nicnumber = updateUser.Nicnumber;
-            newUserData.Address = updateUser.Address;
-            newUserData.Gender = updateUser.Gender;
-            newUserData.PasswordHashed = BCrypt.Net.BCrypt.HashPassword(updateUser.newPassword);
-     
+            var oldUserInfo = await _repository.GetUserByIdAsync(userId);
 
-        var updatedUser=await _repository.updateUser(newUserData);
-            return updatedUser;
+            if (oldUserInfo != null)
+            {
+                oldUserInfo.Name = updateUserdata.Name;
+                oldUserInfo.Email = updateUserdata.Email;
+                oldUserInfo.Role = updateUserdata.Role;
+                oldUserInfo.Nicnumber = updateUserdata.Nicnumber;
+                oldUserInfo.Nicnumber = updateUserdata.Nicnumber;
+                oldUserInfo.Address.firstLine = updateUserdata.Address.firstLine;
+                oldUserInfo.Address.secondLine = updateUserdata.Address.secondLine;
+                oldUserInfo.Address.city = updateUserdata.Address.city;
+                oldUserInfo.Gender = updateUserdata.Gender;
+                var updatedUser = await _repository.updateUser(oldUserInfo);
+                return updatedUser;
+            }
+
+
+
+            throw new Exception("User not found");
+
+        }
+        public async  Task<Users> updatePassword(UpdatePasswordReq updateUser)
+        {
+            var oldUserInfo = await _repository.GetUserByIdAsync(updateUser.id);
+            if (oldUserInfo != null)
+            {
+                if (BCrypt.Net.BCrypt.Verify(updateUser.oldPassword,oldUserInfo.PasswordHashed) && updateUser.nic==oldUserInfo.Nicnumber)
+                {
+                    oldUserInfo.PasswordHashed = BCrypt.Net.BCrypt.HashPassword(updateUser.newPassword);
+                    var updatedUserinfo= await _repository.updateUser(oldUserInfo);
+                    return updatedUserinfo;
+                }
+                throw new Exception("old password or Nic not match");
+                
+            }
+            else
+            {
+                throw new Exception("User not found");
+            }
+              
+            
+           
+
         }
 
     }

@@ -1,6 +1,7 @@
 ﻿using GYM_MILESTONETHREE.IService;
 using GYM_MILESTONETHREE.Models;
 using GYM_MILESTONETHREE.RequestModels;
+using GYM_MILESTONETHREE.Service;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
@@ -9,14 +10,26 @@ namespace GYM_MILESTONETHREE.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UserController : ControllerBase
+    public class UserController: ControllerBase
     {
+
+        private readonly SendmailService _sendmailService;
+
         private readonly IUserService _userService;
 
-        public UserController(IUserService userService)
+        public UserController(IUserService userService, SendmailService sendmailService)
         {
             _userService = userService;
+            _sendmailService = sendmailService;
         }
+
+        [HttpPost]
+        public async Task<IActionResult> Sendmail(SendmailRequest sendMailRequest)
+        {
+            var res = await _sendmailService.Sendmail(sendMailRequest).ConfigureAwait(false);
+            return Ok(res);
+        }
+
         [HttpPost("login")]
         public async Task<IActionResult> login(loginModel Logincredential)
         {

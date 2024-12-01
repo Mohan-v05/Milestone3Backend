@@ -9,6 +9,8 @@ using GYM_MILESTONETHREE.IRepository;
 using GYM_MILESTONETHREE.Repository;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
+using GYM_MILESTONETHREE.Models;
+using Microsoft.Extensions.Options;
 
 namespace GYM_MILESTONETHREE
 {
@@ -24,9 +26,18 @@ namespace GYM_MILESTONETHREE
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-
+            // Register EmailConfig
+            builder.Services.Configure<EmailConfig>(builder.Configuration.GetSection("EmailConfig"));
+            builder.Services.AddScoped<SendmailService>();
+            builder.Services.AddScoped<SendMailRepository>();
+            builder.Services.AddScoped<EmailServiceProvider>();
 
             builder.Services.AddDbContext<AppDb>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DbConnection")));
+
+            // Ensure EmailConfig is available as a singleton if needed
+            builder.Services.AddSingleton(sp => sp.GetRequiredService<IOptions<EmailConfig>>().Value);
+
+
             builder.Services.AddScoped<IGymProgramService, GymProgramService>();
             builder.Services.AddScoped<IGymProgramRepository, GymProgramsRepository>();
 

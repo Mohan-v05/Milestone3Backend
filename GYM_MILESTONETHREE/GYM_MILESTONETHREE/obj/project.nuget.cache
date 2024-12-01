@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "K+NLWqoW22Y=",
+  "dgSpecHash": "j/aJr1KdCXk=",
   "success": true,
-  "projectFilePath": "X:\\GYM_MANAGEMENT\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj",
+  "projectFilePath": "C:\\Users\\UT01146\\Desktop\\12-1\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\UT01146\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\UT01146\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GYM_MILESTONETHREE.Migrations
 {
     [DbContext(typeof(AppDb))]
-    [Migration("20241128082006_ennavalka")]
-    partial class ennavalka
+    [Migration("20241201042043_inital")]
+    partial class inital
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -289,7 +289,7 @@ namespace GYM_MILESTONETHREE.Migrations
                     b.HasOne("GYM_MILESTONETHREE.Models.Users", "Payee")
                         .WithMany()
                         .HasForeignKey("PayeeId")
-                        .OnDelete(DeleteBehavior.Cascade)
+                        .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
                     b.HasOne("GYM_MILESTONETHREE.Models.Users", "Payer")

@@ -82,12 +82,17 @@ namespace GYM_MILESTONETHREE.Service
         {
             try
             {
-                var Address = new Address()
+                var newAddress = new Address();
+                if (req.Address!=null)
                 {
-                    firstLine = req.Address.firstLine,
-                    secondLine = req.Address.secondLine,
-                    city = req.Address.city,
-                };
+                    {
+                        newAddress.firstLine = req.Address.firstLine;
+                        newAddress.secondLine = req.Address.secondLine;
+                        newAddress.city = req.Address.city;
+                    };
+
+                }
+                
                 var newUser = new Users()
                 { 
                     Name = req.Name,
@@ -95,7 +100,7 @@ namespace GYM_MILESTONETHREE.Service
                     Role = req.Role,
                     Nicnumber = req.Nicnumber,
                     Gender = req.gender,
-                    Address = Address,
+                    Address = newAddress,
                     PasswordHashed = BCrypt.Net.BCrypt.HashPassword(req.Password),
                     IsActivated = req.isActivated,
                 };

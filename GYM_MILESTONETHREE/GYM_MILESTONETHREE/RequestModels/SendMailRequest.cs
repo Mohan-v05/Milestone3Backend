@@ -6,8 +6,8 @@ namespace GYM_MILESTONETHREE.RequestModels
     {
         public string? Name { get; set; }
         public string? Otp { get; set; }
-
         public string? Email { get; set; }
         public EmailTypes EmailType { get; set; }
+        public string? Amount { get; set; }
     }
 }

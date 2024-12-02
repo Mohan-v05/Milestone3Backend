@@ -1,6 +1,7 @@
 ﻿using GYM_MILESTONETHREE.IService;
 using GYM_MILESTONETHREE.Models;
 using GYM_MILESTONETHREE.RequestModels;
+using GYM_MILESTONETHREE.ResponseModels;
 using GYM_MILESTONETHREE.Service;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
@@ -40,7 +41,11 @@ namespace GYM_MILESTONETHREE.Controllers
             }
             catch (Exception ex)
             {
-                return BadRequest(ex);
+                var errormsg = new Error()
+                {
+                    message = ex.Message
+                };
+                return BadRequest(errormsg);
             }
         }
 

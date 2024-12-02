@@ -12,8 +12,9 @@ namespace GYM_MILESTONETHREE.Service
 
             var template = await _sendMailRepository.GetTemplate(sendMailRequest.EmailType).ConfigureAwait(false);
             if (template == null) throw new Exception("Template not found");
-
-            var bodyGenerated = await EmailBodyGenerate(template.Body, sendMailRequest.Name, sendMailRequest.Otp);
+             
+            
+            var bodyGenerated = await EmailBodyGenerate(template.Body, sendMailRequest.Name, sendMailRequest.Otp,sendMailRequest.Amount);
 
             MailModel mailModel = new MailModel
             {
@@ -28,12 +29,13 @@ namespace GYM_MILESTONETHREE.Service
             return "email was sent successfully";
         }
 
-        public async Task<string> EmailBodyGenerate(string emailbody, string? name = null, string? otp = null)
+        public async Task<string> EmailBodyGenerate(string emailbody, string? name = null, string? otp = null,string? amount= null)
         {
             var replacements = new Dictionary<string, string?>
             {
                 { "{Name}", name },
-                { "{Otp}", otp }
+                { "{Otp}", otp },
+                { "{Amount}",amount }
             };
 
             foreach (var replacement in replacements)
@@ -46,6 +48,7 @@ namespace GYM_MILESTONETHREE.Service
 
             return emailbody;
         }
+       
 
     }
 }

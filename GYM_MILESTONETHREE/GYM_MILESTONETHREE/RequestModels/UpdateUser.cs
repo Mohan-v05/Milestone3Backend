@@ -9,7 +9,7 @@ namespace GYM_MILESTONETHREE.RequestModels
 
         public string? Email { get; set; }
 
-        public Role Role { get; set; }
+        public Role? Role { get; set; }
 
         public string? Nicnumber { get; set; }
 

@@ -53,6 +53,7 @@ namespace GYM_MILESTONETHREE.Service
 
         private TokenModel createToken(Users user)
         {
+           
             var key = _config["Jwt:key"];
             var seckey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(key));
             var credentials = new SigningCredentials(seckey, SecurityAlgorithms.HmacSha256);
@@ -172,26 +173,30 @@ namespace GYM_MILESTONETHREE.Service
         {
             var oldUserInfo = await _repository.GetUserByIdAsync(userId);
 
-            if (oldUserInfo != null)
+            if (oldUserInfo == null)
             {
-                oldUserInfo.Name = updateUserdata.Name;
-                oldUserInfo.Email = updateUserdata.Email;
-                oldUserInfo.Role = updateUserdata.Role;
-                oldUserInfo.Nicnumber = updateUserdata.Nicnumber;
-                oldUserInfo.Nicnumber = updateUserdata.Nicnumber;
-                oldUserInfo.Address.firstLine = updateUserdata.Address.firstLine;
-                oldUserInfo.Address.secondLine = updateUserdata.Address.secondLine;
-                oldUserInfo.Address.city = updateUserdata.Address.city;
-                oldUserInfo.Gender = updateUserdata.Gender;
-                var updatedUser = await _repository.updateUser(oldUserInfo);
-                return updatedUser;
+                throw new Exception("User not found");
             }
 
+            oldUserInfo.Name = updateUserdata.Name;
+            oldUserInfo.Email = updateUserdata.Email;
+            oldUserInfo.Role = updateUserdata.Role ?? oldUserInfo.Role;
+            oldUserInfo.Nicnumber = updateUserdata.Nicnumber;
 
 
-            throw new Exception("User not found");
+            if (updateUserdata.Address != null)
+            {
+                oldUserInfo.Address.firstLine = updateUserdata.Address.firstLine ;
+                oldUserInfo.Address.secondLine = updateUserdata.Address.secondLine;
+                oldUserInfo.Address.city = updateUserdata.Address.city ;
+            }
 
+            oldUserInfo.Gender = updateUserdata.Gender ?? oldUserInfo.Gender;
+
+            var updatedUser = await _repository.updateUser(oldUserInfo);
+            return updatedUser;
         }
+
         public async  Task<Users> updatePassword(UpdatePasswordReq updateUser)
         {
             var oldUserInfo = await _repository.GetUserByIdAsync(updateUser.id);

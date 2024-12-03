@@ -107,14 +107,27 @@ namespace GYM_MILESTONETHREE.Controllers
         // PUT: api/GymPrograms/5
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutGymPrograms(int id, createProgramReq request)
+        public async Task<IActionResult> PutGymPrograms(int id, UpdateProgramReq request)
         {
-
+            var oldPrograminfo = await _context.gymprograms.FindAsync(id);
             if (request.image == null || request.image.Length == 0)
             {
-                return BadRequest("No image uploaded.");
+              
+                if (oldPrograminfo != null)
+                {
+                    oldPrograminfo.Name = request.Name;
+                    oldPrograminfo.Description = request.Description;
+                    oldPrograminfo.Category = request.Category;
+                    oldPrograminfo.Fees = request.Fees ?? oldPrograminfo.Fees;
+
+
+                    _context.gymprograms.Update(oldPrograminfo);
+                    await _context.SaveChangesAsync();
+
+                    return Ok(oldPrograminfo);
+                }
             }
-            // Save the image to the wwwroot/images folder
+         
             var fileName = Path.GetFileName(request.image.FileName);
             var filePath = Path.Combine(_imageFolder, fileName);
 
@@ -123,13 +136,12 @@ namespace GYM_MILESTONETHREE.Controllers
                 await request.image.CopyToAsync(stream);
             }
 
-            var oldPrograminfo = await _context.gymprograms.FindAsync(id);
             if (oldPrograminfo!=null)
             {
                 oldPrograminfo.Name = request.Name;
                 oldPrograminfo.Description = request.Description;
                 oldPrograminfo.Category = request.Category;
-                oldPrograminfo.Fees = request.Fees;
+                oldPrograminfo.Fees = request.Fees?? oldPrograminfo.Fees;
                 oldPrograminfo.ImagePath = $"http://localhost:5159/images/{fileName}";
 
                 _context.gymprograms.Update(oldPrograminfo);

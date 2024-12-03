@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GYM_MILESTONETHREE")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ca1afdac8093afda23f56351ab70e6673e37d428")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+33ad2ecceca55deb3e296e2f31abb150a2e3beff")]
 [assembly: System.Reflection.AssemblyProductAttribute("GYM_MILESTONETHREE")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GYM_MILESTONETHREE")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

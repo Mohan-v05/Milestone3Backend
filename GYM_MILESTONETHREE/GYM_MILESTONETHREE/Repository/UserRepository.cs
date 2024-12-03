@@ -83,7 +83,7 @@ namespace GYM_MILESTONETHREE.Repository
 
 
                 var usersToDeactivate = await _context.users
-                    .Where(u => u.ExpiryDate != null && u.ExpiryDate.Value <= dateThreshold && u.IsActivated)
+                    .Where(u => u.ExpiryDate != null && u.ExpiryDate.Value <= dateThreshold && u.IsActivated ||u.ExpiryDate==null)
                     .ToListAsync();
 
                 foreach (var user in usersToDeactivate)

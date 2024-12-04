@@ -16,7 +16,7 @@ namespace GYM_MILESTONETHREE.Controllers
             _notificationService = notificationService;
         }
 
-        [HttpPatch]
+        [HttpPatch("{id}")]
         public async Task<IActionResult> markAsRead(Guid id)
         {
             var data = await _notificationService.markAsReadAsync(id);

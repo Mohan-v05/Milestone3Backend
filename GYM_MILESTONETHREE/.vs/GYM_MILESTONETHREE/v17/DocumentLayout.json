@@ -1,0 +1,105 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mohan\\OneDrive\\Desktop\\Enchancement\\Milestone3Backend\\GYM_MILESTONETHREE\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\enchancement\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\service\\sendmailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\service\\sendmailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\enchancement\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\migrations\\20241201042043_inital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\migrations\\20241201042043_inital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\enchancement\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\requestmodels\\sendmailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\requestmodels\\sendmailrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\enchancement\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\service\\enrollementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\service\\enrollementservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|c:\\users\\mohan\\onedrive\\desktop\\enchancement\\milestone3backend\\gym_milestonethree\\gym_milestonethree\\enums\\emailtypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ADBB8FC9-9B58-42A6-A23A-00E88C5DF5D4}|GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj|solutionrelative:gym_milestonethree\\enums\\emailtypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20241201042043_inital.cs",
+              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\Enchancement\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241201042043_inital.cs",
+              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Migrations\\20241201042043_inital.cs",
+              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\Enchancement\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Migrations\\20241201042043_inital.cs",
+              "RelativeToolTip": "GYM_MILESTONETHREE\\Migrations\\20241201042043_inital.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBwAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T16:15:06.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EnrollementService.cs",
+              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\Enchancement\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Service\\EnrollementService.cs",
+              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Service\\EnrollementService.cs",
+              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\Enchancement\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Service\\EnrollementService.cs",
+              "RelativeToolTip": "GYM_MILESTONETHREE\\Service\\EnrollementService.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAYwB0AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T16:11:38.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SendMailRequest.cs",
+              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\Enchancement\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\RequestModels\\SendMailRequest.cs",
+              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\RequestModels\\SendMailRequest.cs",
+              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\Enchancement\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\RequestModels\\SendMailRequest.cs",
+              "RelativeToolTip": "GYM_MILESTONETHREE\\RequestModels\\SendMailRequest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAQAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T15:50:06.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SendmailService.cs",
+              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\Enchancement\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Service\\SendmailService.cs",
+              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Service\\SendmailService.cs",
+              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\Enchancement\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Service\\SendmailService.cs",
+              "RelativeToolTip": "GYM_MILESTONETHREE\\Service\\SendmailService.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAowCkAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T14:06:50.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmailTypes.cs",
+              "DocumentMoniker": "C:\\Users\\mohan\\OneDrive\\Desktop\\Enchancement\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Enums\\EmailTypes.cs",
+              "RelativeDocumentMoniker": "GYM_MILESTONETHREE\\Enums\\EmailTypes.cs",
+              "ToolTip": "C:\\Users\\mohan\\OneDrive\\Desktop\\Enchancement\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\Enums\\EmailTypes.cs",
+              "RelativeToolTip": "GYM_MILESTONETHREE\\Enums\\EmailTypes.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T14:05:06.477Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

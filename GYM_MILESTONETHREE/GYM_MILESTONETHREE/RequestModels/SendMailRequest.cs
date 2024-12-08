@@ -9,5 +9,6 @@ namespace GYM_MILESTONETHREE.RequestModels
         public string? Email { get; set; }
         public EmailTypes EmailType { get; set; }
         public string? Amount { get; set; }
+        public string? Reason {  get; set; }
     }
 }

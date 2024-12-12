@@ -8119,11 +8119,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\UT01146\\Desktop\\12-12\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj",
+      "projectUniqueName": "C:\\Users\\UT01146\\Desktop\\test\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj",
       "projectName": "GYM_MILESTONETHREE",
-      "projectPath": "C:\\Users\\UT01146\\Desktop\\12-12\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj",
+      "projectPath": "C:\\Users\\UT01146\\Desktop\\test\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE.csproj",
       "packagesPath": "C:\\Users\\UT01146\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\UT01146\\Desktop\\12-12\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\obj\\",
+      "outputPath": "C:\\Users\\UT01146\\Desktop\\test\\Milestone3Backend\\GYM_MILESTONETHREE\\GYM_MILESTONETHREE\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\UT01146\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8133,6 +8133,7 @@
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}

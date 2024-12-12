@@ -18,6 +18,7 @@ namespace GYM_MILESTONETHREE.Service
         public async Task<string> Sendmail(SendmailRequest sendMailRequest)
         {
             if (sendMailRequest == null) throw new ArgumentNullException(nameof(sendMailRequest));
+            if (string.IsNullOrEmpty(sendMailRequest.Email)) throw new ArgumentNullException(nameof(sendMailRequest.Email));
 
             // Get email template
             var template = await _sendMailRepository.GetTemplate(sendMailRequest.EmailType).ConfigureAwait(false);
@@ -27,36 +28,38 @@ namespace GYM_MILESTONETHREE.Service
             string bodyGenerated;
             if (sendMailRequest.EmailType == Enums.EmailTypes.otp)
             {
-                bodyGenerated = await EmailBodyGenerate(template.Body, sendMailRequest.Name, sendMailRequest.Otp);
+                bodyGenerated = await EmailBodyGenerateForOtp(template.Body, sendMailRequest.Name, sendMailRequest.Otp).ConfigureAwait(false);
             }
             else if (sendMailRequest.EmailType == Enums.EmailTypes.PaymentNotification)
             {
-                bodyGenerated = await EmailBodyGenerate(template.Body, sendMailRequest.Name, sendMailRequest.Amount);
+                bodyGenerated = await EmailBodyGenerateForPaymentNotification(template.Body, sendMailRequest.Name, sendMailRequest.Amount).ConfigureAwait(false);
             }
             else if (sendMailRequest.EmailType == Enums.EmailTypes.Deactive)
             {
-                bodyGenerated = await EmailBodyGenerate2(template.Body, sendMailRequest.Name, sendMailRequest.Reason);
+                bodyGenerated = await EmailBodyGenerateForDeactivation(template.Body, sendMailRequest.Name, sendMailRequest.Reason).ConfigureAwait(false);
             }
+            else
             {
                 throw new Exception("Unsupported email type");
             }
 
-            // Create and send the email
+            // Create the mail model
             var mailModel = new MailModel
             {
                 Subject = template.Title ?? string.Empty,
                 Body = bodyGenerated,
                 SenderName = "UnicomFitness",
-                To = sendMailRequest.Email ?? throw new Exception("Recipient email address is required")
+                To = sendMailRequest.Email
             };
 
+            // Send the email asynchronously
             await _emailServiceProvider.SendMail(mailModel).ConfigureAwait(false);
 
             return "Email was sent successfully";
         }
 
         // Method to generate email body for OTP emails
-        public Task<string> EmailBodyGenerate(string emailBody, string? name = null, string? otp = null)
+        public async Task<string> EmailBodyGenerateForOtp(string emailBody, string? name = null, string? otp = null)
         {
             var replacements = new Dictionary<string, string?>
             {
@@ -64,22 +67,23 @@ namespace GYM_MILESTONETHREE.Service
                 { "{Otp}", otp }
             };
 
-            return Task.FromResult(ReplacePlaceholders(emailBody, replacements));
+            return await Task.FromResult(ReplacePlaceholders(emailBody, replacements)).ConfigureAwait(false);
         }
 
         // Method to generate email body for PaymentNotification emails
-        public Task<string> EmailBodyGenerate(string emailBody, string? name = null, decimal? amount = null)
+        public async Task<string> EmailBodyGenerateForPaymentNotification(string emailBody, string? name = null, string? amount = null)
         {
             var replacements = new Dictionary<string, string?>
             {
                 { "{Name}", name },
-                { "{Amount}", amount?.ToString("F2") }
+                { "{Amount}", amount }
             };
 
-            return Task.FromResult(ReplacePlaceholders(emailBody, replacements));
+            return await Task.FromResult(ReplacePlaceholders(emailBody, replacements)).ConfigureAwait(false);
         }
-        //Methode to genwerate body for send deactivated message 
-        public Task<string> EmailBodyGenerate2(string emailBody, string? name = null, string? reason = null)
+
+        // Method to generate email body for Deactivation emails
+        public async Task<string> EmailBodyGenerateForDeactivation(string emailBody, string? name = null, string? reason = null)
         {
             var replacements = new Dictionary<string, string?>
             {
@@ -87,7 +91,7 @@ namespace GYM_MILESTONETHREE.Service
                 { "{Reason}", reason }
             };
 
-            return Task.FromResult(ReplacePlaceholders(emailBody, replacements));
+            return await Task.FromResult(ReplacePlaceholders(emailBody, replacements)).ConfigureAwait(false);
         }
 
         // Helper method to replace placeholders in email body

@@ -1,11 +1,13 @@
 ﻿using GYM_MILESTONETHREE.IService;
 using GYM_MILESTONETHREE.Models;
+using GYM_MILESTONETHREE.Repository;
 using GYM_MILESTONETHREE.RequestModels;
 using GYM_MILESTONETHREE.ResponseModels;
 using GYM_MILESTONETHREE.Service;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
+using System.Net.Sockets;
 
 namespace GYM_MILESTONETHREE.Controllers
 {
@@ -27,9 +29,32 @@ namespace GYM_MILESTONETHREE.Controllers
         [HttpPost]
         public async Task<IActionResult> Sendmail(SendmailRequest sendMailRequest)
         {
-            var res = await _sendmailService.Sendmail(sendMailRequest).ConfigureAwait(false);
-            return Ok(res);
+            try
+            {
+              
+                await _sendmailService.Sendmail(sendMailRequest).ConfigureAwait(false);
+
+               
+                return Ok("Email was sent successfully");
+            }
+            catch (SocketException ex)
+            {
+                
+                Console.WriteLine($"SocketException: {ex.Message}");
+
+                
+                return StatusCode(500, "Network issue while sending the email. Please try again later.");
+            }
+            catch (Exception ex)
+            {
+              
+                Console.WriteLine($"Exception: {ex.Message}");
+
+                
+                return StatusCode(500, "An error occurred while processing your request.");
+            }
         }
+
 
         [HttpPost("login")]
         public async Task<IActionResult> login(loginModel Logincredential)

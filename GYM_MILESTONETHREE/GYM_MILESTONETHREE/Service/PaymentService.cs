@@ -16,6 +16,7 @@ namespace GYM_MILESTONETHREE.Service
         private readonly IPayamentsRepository _paymentsRepository;
         private readonly IUserRepository _userrepository;
         private readonly INotificationRepository _notificationService;
+        private readonly SendmailService _SendmailService;
         public PaymentService(IPayamentsRepository paymentsRepository, IUserRepository userrepository, INotificationRepository notificationService)
         {
             _paymentsRepository = paymentsRepository;
@@ -44,6 +45,11 @@ namespace GYM_MILESTONETHREE.Service
                 isRead=false,
                 UserId = req.memberid
             };
+            SendmailRequest newmail = new SendmailRequest
+            {
+                EmailType=Enums.EmailTypes.PaymentNotification,
+                Email=user.Email,
+            };
 
             Payments payment = new Payments
             {
@@ -56,21 +62,22 @@ namespace GYM_MILESTONETHREE.Service
             // Handle payment based on payment type
             if (req.PaymentType == PaymentType.MonthlySubscribtionrenewal)
             {
-                await ProcessMonthlySubscription(req, user, admin, payment, notification);
+                await ProcessMonthlySubscription(req, user, admin, payment, notification, newmail);
             }
             else if (req.PaymentType == PaymentType.AnnualSubcribtionrenewal)
             {
-                await ProcessAnnualSubscription(req, user, admin, payment, notification);
+                await ProcessAnnualSubscription(req, user, admin, payment, notification, newmail);
             }
             else if (req.PaymentType == PaymentType.Initialpayment)
             {
-                await ProcessInitialPayment(req, user, admin, payment, notification);
+                await ProcessInitialPayment(req, user, admin, payment, notification,newmail);
             }
 
             // Save payment and notification
             await _notificationService.AddNotificationAsync(notification);
             await _paymentsRepository.AddPayment(payment);
             await _userrepository.updateUser(user);
+            await _SendmailService.Sendmail(newmail);
 
             return new PaymentResponse
             {
@@ -82,7 +89,7 @@ namespace GYM_MILESTONETHREE.Service
                 Description = payment.Description
             };
         }
-        private async Task ProcessMonthlySubscription(PaymentsReq req, Users user, Users admin, Payments payment, Notification notification)
+        private async Task ProcessMonthlySubscription(PaymentsReq req, Users user, Users admin, Payments payment, Notification notification,SendmailRequest sendmail)
         {
             // Update the user's expiry date
             if (user.ExpiryDate == null)
@@ -104,9 +111,11 @@ namespace GYM_MILESTONETHREE.Service
 
             // Generate notification message
             notification.Message = $"Dear {user.Name}, We have received your payment of {payment.Amount} on {payment.dateTime}. Your monthly membership is valid till {user.ExpiryDate}.";
+
+            sendmail.Amount = payment.Amount.ToString();
         }
 
-        private async Task ProcessAnnualSubscription(PaymentsReq req, Users user, Users admin, Payments payment, Notification notification)
+        private async Task ProcessAnnualSubscription(PaymentsReq req, Users user, Users admin, Payments payment, Notification notification, SendmailRequest sendmail)
         {
             // Update the user's expiry date
             user.ExpiryDate = user.ExpiryDate == null ? DateTime.Now.AddYears(req.quantity) : user.ExpiryDate.Value.AddYears(req.quantity);
@@ -117,14 +126,15 @@ namespace GYM_MILESTONETHREE.Service
             // Calculate payment amount based on discount
             payment.Amount = Total - req.AnyDiscount;
               
-
             // Construct payment description
             payment.Description = $"{user.Name} purchased Annual subscription, paid unit price: {Total} Quantity: {req.quantity} Total: {user.Fees * req.quantity * 12} - Discount: {req.AnyDiscount} Amount paid: {req.Amount} Balance: {req.Amount - payment.Amount} received By {admin.Name}Valid till {user.ExpiryDate}";
 
             // Generate notification message
             notification.Message = $"Dear {user.Name}, We have received your payment of {payment.Amount} on {payment.dateTime}. Your annual membership is valid till {user.ExpiryDate}.";
+
+            sendmail.Amount = payment.Amount.ToString();
         }
-        private async Task ProcessInitialPayment(PaymentsReq req, Users user, Users admin, Payments payment, Notification notification)
+        private async Task ProcessInitialPayment(PaymentsReq req, Users user, Users admin, Payments payment, Notification notification, SendmailRequest sendmail)
         {
             // Set initial payment amount
             decimal initalPaymentAmount = 1000;
@@ -141,6 +151,7 @@ namespace GYM_MILESTONETHREE.Service
                 // Generate notification message
                 notification.Message = $"Dear {user.Name}, We have received your payment of {payment.Amount} on {payment.dateTime}. You are now a member of Unicom Fitness. Thanks for doing business with us.";
 
+                sendmail.Amount = payment.Amount.ToString();
             }
             else
             {

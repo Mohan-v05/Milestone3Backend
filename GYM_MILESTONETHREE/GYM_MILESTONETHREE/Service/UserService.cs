@@ -13,9 +13,12 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Migrations.Operations;
 using Microsoft.IdentityModel.Tokens;
 using Org.BouncyCastle.Crypto.Generators;
+using System.Drawing;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using static Org.BouncyCastle.Asn1.Cmp.Challenge;
+using static System.Net.WebRequestMethods;
 
 namespace GYM_MILESTONETHREE.Service
 {
@@ -23,11 +26,13 @@ namespace GYM_MILESTONETHREE.Service
     {
         private readonly IUserRepository _repository;
         private readonly IConfiguration _config;
+        private readonly SendmailService _SendmailService;
 
-        public UserService(IUserRepository repository, IConfiguration config)
+        public UserService(IUserRepository repository, IConfiguration config, SendmailService sendmailService)
         {
             _repository = repository;
             _config = config;
+            _SendmailService = sendmailService;
         }
 
         public async Task<TokenModel> login(loginModel model)
@@ -83,31 +88,55 @@ namespace GYM_MILESTONETHREE.Service
         {
             try
             {
-                var newAddress = new Address();
-                if (req.Address!=null)
+                var User = await _repository.GetUserByEmail(req.email);
+               
+
+             
+                if (User == null)
                 {
+                    Random rand = new Random();
+                    SendmailRequest sendmail = new SendmailRequest()
                     {
-                        newAddress.firstLine = req.Address.firstLine;
-                        newAddress.secondLine = req.Address.secondLine;
-                        newAddress.city = req.Address.city;
+                        Name = req.Name,
+                        EmailType = Enums.EmailTypes.otp,
+                        Email = req.email,
+                        Password=req.Password
+         
+
                     };
 
-                }
-                
-                var newUser = new Users()
-                { 
-                    Name = req.Name,
-                    Email = req.email,
-                    Role = req.Role,
-                    Nicnumber = req.Nicnumber,
-                    Gender = req.gender,
-                    Address = newAddress,
-                    PasswordHashed = BCrypt.Net.BCrypt.HashPassword(req.Password),
-                    IsActivated = req.isActivated,
-                };
+                    var newAddress = new Address();
+                    if (req.Address != null)
+                    {
+                        {
+                            newAddress.firstLine = req.Address.firstLine;
+                            newAddress.secondLine = req.Address.secondLine;
+                            newAddress.city = req.Address.city;
+                        };
 
-                var data = await _repository.AddUser(newUser);
-                return newUser;
+                    }
+
+                    var newUser = new Users()
+                    {
+                        Name = req.Name,
+                        Email = req.email,
+                        Role = req.Role,
+                        Nicnumber = req.Nicnumber,
+                        Gender = req.gender,
+                        Address = newAddress,
+                        PasswordHashed = BCrypt.Net.BCrypt.HashPassword(req.Password),
+                        IsActivated = req.isActivated,
+                    };
+                    sendmail.Otp = rand.Next(10000, 99999).ToString();
+                     
+                    var res= await _SendmailService.Sendmail(sendmail);
+                    var data = await _repository.AddUser(newUser);
+                    return newUser;
+                }
+                else
+                {
+                    throw new Exception("Already used mail");
+                }
             }
             catch (Exception ex)
             {
@@ -152,15 +181,25 @@ namespace GYM_MILESTONETHREE.Service
         public async Task<Users> DeleteUserByIdAsync(int UserId , bool permanent)
         {
             var data = await _repository.GetUserByIdAsync(UserId);
-           
+            SendmailRequest sendmailRequest = new SendmailRequest()
+            {
+                EmailType = Enums.EmailTypes.Deactive,
+                Email=data.Email,
+                Name =data.Name,
+            };
+
             if (data != null)
                 if (permanent)
                 {
+                    sendmailRequest.Reason = " to your request";
+                    await _SendmailService.Sendmail(sendmailRequest);
                     return await _repository.DeleteUserByIdAsync(data);
                 }
             else
                 {
-                data.IsActivated = false;
+                    sendmailRequest.Reason = "Subscribtion end";
+                    await _SendmailService.Sendmail(sendmailRequest);
+                    data.IsActivated = false;
                return await _repository.updateUser(data);
                  }
             else
@@ -168,6 +207,7 @@ namespace GYM_MILESTONETHREE.Service
                 throw new Exception($"Unable to Find User with Id: {UserId}");
 
             }
+           
         }
         public async Task<Users> updateUserAsync(int userId, UpdateUser updateUserdata)
         {

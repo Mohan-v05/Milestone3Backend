@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UnicomFitness | Payment Confirmation</title>
+    <title>UnicomFitness | Login Credentials</title>
     <style>
         body {
             font-family: "Arial", sans-serif;
@@ -38,9 +38,9 @@
         .email-body p {
             margin: 15px 0;
         }
-        .amount-paid {
+        .login-details {
             display: inline-block;
-            font-size: 1.8em;
+            font-size: 1.2em;
             font-weight: bold;
             color: #1a73e8;
             background-color: #f4f8fc;
@@ -48,6 +48,7 @@
             border-radius: 8px;
             margin: 20px 0;
             text-align: center;
+            width: 100%;
         }
         .email-footer {
             background-color: #f4f8fc;
@@ -76,18 +77,19 @@
     <div class="email-container">
         <!-- Header Section -->
         <div class="email-header">
-            <h2>verify your Account</h2>
+            <h2>Welcome to UnicomFitness</h2>
         </div>
 
-      <!-- Body Section -->
-      <div class="email-body">
-        <p>Hi <strong>{Name}</strong>,</p>
-        <p>Thank you for choosing UnicomFitness! To verify your account, please use the following one-time password (OTP):</p>
-        <div class="otp-code">{Otp}</div>
-        <p>The OTP will expire in <strong>10 minutes</strong>.</p>
-        <p>If you did not make this request, please contact our support team immediately.</p>
-    </div>
-
+        <!-- Body Section -->
+        <div class="email-body">
+            <p>Hi <strong>{Name}</strong>,</p>
+            <p>Thank you for choosing UnicomFitness! Below are your login credentials to access your account:</p>
+            <div class="login-details">
+                <p><strong>Username:</strong> {Username}</p>
+                <p><strong>Password:</strong> {Password}</p>
+            </div>
+            <p>Please make sure to keep your credentials safe. If you did not create an account or request these details, please contact our support team immediately.</p>
+        </div>
 
         <!-- Footer Section -->
         <div class="email-footer">

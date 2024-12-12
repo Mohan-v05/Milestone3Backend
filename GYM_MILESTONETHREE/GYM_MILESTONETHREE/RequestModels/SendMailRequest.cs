@@ -10,5 +10,6 @@ namespace GYM_MILESTONETHREE.RequestModels
         public EmailTypes EmailType { get; set; }
         public string? Amount { get; set; }
         public string? Reason {  get; set; }
+        public string? Password { get; set; }
     }
 }

@@ -17,11 +17,12 @@ namespace GYM_MILESTONETHREE.Service
         private readonly IUserRepository _userrepository;
         private readonly INotificationRepository _notificationService;
         private readonly SendmailService _SendmailService;
-        public PaymentService(IPayamentsRepository paymentsRepository, IUserRepository userrepository, INotificationRepository notificationService)
+        public PaymentService(IPayamentsRepository paymentsRepository, IUserRepository userrepository, INotificationRepository notificationService, SendmailService SendmailService)
         {
             _paymentsRepository = paymentsRepository;
             _userrepository = userrepository;
             _notificationService = notificationService;
+            _SendmailService = SendmailService;
         }
         public async Task<PaymentResponse> AddPayment(PaymentsReq req)
         {
@@ -49,6 +50,7 @@ namespace GYM_MILESTONETHREE.Service
             {
                 EmailType=Enums.EmailTypes.PaymentNotification,
                 Email=user.Email,
+                Name=user.Name,
             };
 
             Payments payment = new Payments

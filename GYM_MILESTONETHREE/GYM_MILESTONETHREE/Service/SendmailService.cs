@@ -28,7 +28,7 @@ namespace GYM_MILESTONETHREE.Service
             string bodyGenerated;
             if (sendMailRequest.EmailType == Enums.EmailTypes.otp)
             {
-                bodyGenerated = await EmailBodyGenerateForOtp(template.Body, sendMailRequest.Name, sendMailRequest.Otp).ConfigureAwait(false);
+                bodyGenerated = await EmailBodyGenerateForOtp(template.Body, sendMailRequest.Name, sendMailRequest.Email, sendMailRequest.Password).ConfigureAwait(false);
             }
             else if (sendMailRequest.EmailType == Enums.EmailTypes.PaymentNotification)
             {
@@ -59,12 +59,13 @@ namespace GYM_MILESTONETHREE.Service
         }
 
         // Method to generate email body for OTP emails
-        public async Task<string> EmailBodyGenerateForOtp(string emailBody, string? name = null, string? otp = null)
+        public async Task<string> EmailBodyGenerateForOtp(string emailBody, string? name = null, string? username = null,string? Password =null )
         {
             var replacements = new Dictionary<string, string?>
             {
                 { "{Name}", name },
-                { "{Otp}", otp }
+                { "{Username}", username },
+                { "{Password}", Password}
             };
 
             return await Task.FromResult(ReplacePlaceholders(emailBody, replacements)).ConfigureAwait(false);
